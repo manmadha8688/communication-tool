@@ -1,10 +1,10 @@
-# Deploying the Communication Assessment
+# Deploying Neutara CommuniQ
 
 ## Before going live
 
 | # | What | Where |
 |---|---|---|
-| 1 | A server with Docker, and a domain, e.g. `assessment.cftools.live` | |
+| 1 | A server with Docker, and a domain, e.g. `neutaracommuniq.cftools.live` | |
 | 2 | **HTTPS** on that domain (reverse proxy / load balancer with a certificate). Part 3 (the live meeting) uses the microphone, which browsers only allow on `https://`. | Hosting |
 | 3 | In Azure, the app registration's **Authentication → Single-page application**: add `https://<domain>` (no trailing slash). Not under "Web". | Azure portal |
 | 4 | Copy `.env.production.example` to `.env.production` on the server and fill it in. Never commit it. | Server |

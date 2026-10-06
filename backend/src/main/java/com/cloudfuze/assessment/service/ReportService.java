@@ -82,7 +82,7 @@ public class ReportService {
                 "Meeting outcome", "Overall /100"};
         int[] width = {5, 24, 13, 32, 18, 22, 13, 26, 18, 18, 11, 9, 14, 11, 14, 11, 16, 12, 18, 13};
 
-        title(s, st, "Neutara Communication Assessment: candidate report",
+        title(s, st, "Neutara CommuniQ: candidate report",
                 (team == null || team.isBlank() ? "All teams" : "Team: " + team) + "   |   Generated "
                         + ZonedDateTime.now(ZoneId.of("Asia/Kolkata")).format(DateTimeFormatter.ofPattern("d MMM yyyy, HH:mm")) + " IST"
                         + "   |   " + rows.size() + (rows.size() == 1 ? " candidate" : " candidates"),

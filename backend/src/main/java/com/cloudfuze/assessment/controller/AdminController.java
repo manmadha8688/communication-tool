@@ -38,7 +38,7 @@ public class AdminController {
     /** The formatted Excel report: every candidate, marks per exam and overall, and a team summary. */
     @GetMapping("/report.xlsx")
     public ResponseEntity<byte[]> excel(@RequestParam(required = false) String team) throws Exception {
-        String name = "Communication Assessment Report" + (team == null || team.isBlank() ? "" : " - " + team.replaceAll("[^A-Za-z0-9 _-]", "")) + ".xlsx";
+        String name = "Neutara CommuniQ Report" + (team == null || team.isBlank() ? "" : " - " + team.replaceAll("[^A-Za-z0-9 _-]", "")) + ".xlsx";
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + name + "\"")
                 .contentType(MediaType.parseMediaType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"))

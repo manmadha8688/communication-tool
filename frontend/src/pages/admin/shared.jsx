@@ -59,7 +59,7 @@ export function downloadCsv(api, team) {
     const url = URL.createObjectURL(r.data);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Communication Assessment Report${team ? ` - ${team}` : ''}.xlsx`;
+    a.download = `Neutara CommuniQ Report${team ? ` - ${team}` : ''}.xlsx`;
     a.click();
     URL.revokeObjectURL(url);
   });

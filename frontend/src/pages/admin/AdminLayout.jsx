@@ -10,7 +10,7 @@ export default function AdminLayout() {
       <aside className="side">
         <div className="logo-chip"><img src="/neutara-mark.png" alt="Neutara" /><span className="wordmark">neutara</span></div>
         <div>
-          <div className="label">Assessment</div>
+          <div className="label">CommuniQ</div>
           <nav>
             <NavLink end to="/admin"><Icon name="grid" /> Overview</NavLink>
             <NavLink to="/admin/candidates"><Icon name="users" /> Candidates</NavLink>

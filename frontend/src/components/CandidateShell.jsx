@@ -17,7 +17,7 @@ export default function CandidateShell({ step, children }) {
             <img className="logo" src="/neutara-mark.png" alt="Neutara" style={{ height: 34 }} />
             <span className="wordmark">neutara</span>
             <div className="divider" />
-            <span>Communication Assessment</span>
+            <span>CommuniQ</span>
           </div>
           <div className="spacer" />
           <div className="who">

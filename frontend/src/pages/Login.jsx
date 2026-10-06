@@ -24,7 +24,7 @@ export default function Login() {
     <div className="login">
       <section className="login-hero">
         <div>
-          <div className="eyebrow">Neutara &middot; Assessment</div>
+          <div className="eyebrow">Neutara CommuniQ</div>
           <h1>Communication Assessment</h1>
           <p>One continuous hour in three parts. Write the way you would for a real customer and a real team.</p>
           <div className="hero-parts">
