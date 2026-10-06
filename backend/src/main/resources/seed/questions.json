@@ -1,0 +1,5402 @@
+[
+ {
+  "code": "E01",
+  "part": "EMAIL",
+  "ordinal": 1,
+  "category": "Customer / Migration / Delivery",
+  "title": "Migration Delay Due to Client Dependency",
+  "scenario": "You are the Migration Project Manager for a Box-to-SharePoint Online migration (around 2,000 users and 15 TB of data). The migration was scheduled to start this morning. However, the client's IT team has still not shared the source admin credentials or the final user-mapping sheet, even after two reminders last week. Without these, the CloudFuze team cannot begin. Every day of delay will push back the planned cutover date, and the client's leadership still expects the project to finish on time.",
+  "task": "Write an email explaining the impact and revised timeline without blaming the client.",
+  "metrics": [
+   {
+    "name": "Clearly states the migration could not start and why (credentials and mapping sheet pending)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the impact on timeline and cutover date",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists exactly what is needed, from whom, and by when",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a revised timeline linked to receipt of inputs",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Neutral, non-blaming tone; offers help (e.g. a quick call)",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E02",
+  "part": "EMAIL",
+  "ordinal": 2,
+  "category": "Customer / Migration / Delivery",
+  "title": "Critical Migration Failure",
+  "scenario": "You are the Delivery Lead for a Google Drive-to-OneDrive migration. Last night, the migration stopped midway after processing about 60% of the data. Initial checks show that 8 of the 20 batches failed because of API throttling and permission errors and must be rerun. The customer noticed the failure this morning, is worried about data integrity, and is asking what went wrong and how long the recovery will take.",
+  "task": "Acknowledge the issue, explain immediate actions, and set expectations.",
+  "metrics": [
+   {
+    "name": "Acknowledges the failure and its impact without minimising it",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States facts: how much completed, how many batches failed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains immediate actions (rerun plan, data integrity checks)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not claim a root cause before it is confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to the next update time and an owner",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E03",
+  "part": "EMAIL",
+  "ordinal": 3,
+  "category": "Customer / Migration / Delivery",
+  "title": "Customer Reports Data Missing",
+  "scenario": "You are the Migration Engineer who handled a Dropbox-to-SharePoint migration that was marked complete three days ago. The customer's IT manager has now emailed saying several users cannot find files and folders they had in the source account. The cause is not yet known; it could be filtered file types, permission issues, files still syncing, or an actual migration gap. The customer is concerned and wants to know what happened.",
+  "task": "Explain how the team will investigate and when the next update will be provided.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern and takes it seriously",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Separates what is confirmed from what is still being checked",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Outlines investigation steps (reports, filters, permissions, sample users)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for specific examples (users, file paths)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to a time for the next update",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E04",
+  "part": "EMAIL",
+  "ordinal": 4,
+  "category": "Customer / Migration / Delivery",
+  "title": "Delta Migration Delay",
+  "scenario": "You are the Project Manager for a file-share migration. The initial (one-time) migration finished successfully last week. The delta migration, which copies files that changed or were added after the first pass, was planned to run this weekend. During testing, the team found an unexpected technical issue with change-detection on the source system, so the delta run cannot start as planned. The customer's cutover date depends on the delta being completed.",
+  "task": "Communicate the situation and revised ETA.",
+  "metrics": [
+   {
+    "name": "Confirms the initial migration is complete",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the delta delay in simple, non-technical terms",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States the impact on cutover",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a revised ETA or the time an ETA will be confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Names the owner and next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E05",
+  "part": "EMAIL",
+  "ordinal": 5,
+  "category": "Customer / Migration / Delivery",
+  "title": "Migration Cutover Risk",
+  "scenario": "You are the Delivery Lead for a large Slack-to-Microsoft Teams migration. Cutover (go-live) is planned in two days. During final checks, the team found that about 15% of private channels have not fully migrated because of a source export limitation. If this is not resolved, users may not see some channel history on go-live day. The customer has already announced the cutover date to all employees.",
+  "task": "Explain the risk and proposed mitigation.",
+  "metrics": [
+   {
+    "name": "Explains the risk clearly and early, before go-live",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Quantifies the impact (around 15% of private channels)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes mitigation and a contingency option",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States what decision is needed from the customer and by when",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Calm, confident tone; no panic or blame",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E06",
+  "part": "EMAIL",
+  "ordinal": 6,
+  "category": "Customer / Migration / Delivery",
+  "title": "Customer Wants Impossible ETA",
+  "scenario": "You are the Migration Project Manager. A customer wants their entire migration (around 30 TB across 3,500 users) completed within the next 24 hours because of an internal deadline. Your technical assessment, based on data volume, API limits of the destination platform, and validation time, shows the work will realistically take 3 to 4 days. The customer is under pressure from their own management and expects a quick yes.",
+  "task": "Respond professionally and manage expectations.",
+  "metrics": [
+   {
+    "name": "Acknowledges the customer's urgency and business pressure",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains clearly why 24 hours is not realistic (volume, API limits, validation)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives the realistic 3 to 4 day timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers options, e.g. prioritising key users or phased delivery",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Avoids overpromising",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E07",
+  "part": "EMAIL",
+  "ordinal": 7,
+  "category": "Customer / Migration / Delivery",
+  "title": "Customer Escalation",
+  "scenario": "You are the Account Delivery Manager. A customer has escalated directly to CloudFuze senior management because several issues have been open for weeks: failed batches, delayed status reports, and an unresolved permissions problem. Their email to leadership says they are losing confidence in the team. Your manager has asked you to take ownership and respond to the customer with a clear recovery plan.",
+  "task": "Take ownership and provide a structured recovery plan.",
+  "metrics": [
+   {
+    "name": "Takes ownership without excuses or blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges each open issue specifically",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents a structured recovery plan with owners and dates",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a regular communication cadence",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers a review call with senior stakeholders",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E08",
+  "part": "EMAIL",
+  "ordinal": 8,
+  "category": "Customer / Migration / Delivery",
+  "title": "Customer Unhappy With Communication",
+  "scenario": "You are the Project Manager on an ongoing migration. The customer's project sponsor has emailed saying they have not received a proper status update in over a week and only learn about problems when their own users complain. They feel 'left in the dark'. The project is actually progressing, but updates have been informal and inconsistent across different team members.",
+  "task": "Address the concern and propose a communication cadence.",
+  "metrics": [
+   {
+    "name": "Acknowledges the gap in communication honestly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a short current status summary",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a fixed cadence (e.g. daily summary, weekly call)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Names a single point of contact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how issues will be flagged proactively",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E09",
+  "part": "EMAIL",
+  "ordinal": 9,
+  "category": "Customer / Migration / Delivery",
+  "title": "Customer Wants Weekend Support",
+  "scenario": "You are the Migration Lead. On Friday afternoon, the customer requests that CloudFuze run and monitor the migration over the weekend so they can be ready by Monday. No engineer was scheduled for weekend support, and the current statement of work covers business hours only. You can arrange limited support, but not full 24x7 coverage at such short notice.",
+  "task": "Explain the support plan and availability.",
+  "metrics": [
+   {
+    "name": "Acknowledges the request and its importance",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clearly states what support is possible and what is not",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains coverage hours, contact method and escalation path",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Mentions any commercial or SOW implications politely",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms the plan in writing",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E10",
+  "part": "EMAIL",
+  "ordinal": 10,
+  "category": "Customer / Migration / Delivery",
+  "title": "Customer Changes Requirements Mid-Project",
+  "scenario": "You are the Project Manager on a migration that is already three weeks into execution. The customer has now asked to add two new departments (around 600 extra users) and include email archives that were not part of the original agreed scope. This change will affect the timeline, the number of engineers needed, the cost, and possibly the cutover date.",
+  "task": "Explain impact on timeline, resources, and delivery.",
+  "metrics": [
+   {
+    "name": "Acknowledges the new requirement positively",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the impact on timeline, resources and cost",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Mentions the change-request or approval process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers options (phased scope, revised plan)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for confirmation before proceeding",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E11",
+  "part": "EMAIL",
+  "ordinal": 11,
+  "category": "Product / Engineering",
+  "title": "Feature Request From Strategic Customer",
+  "scenario": "You are the Customer Success Manager for one of CloudFuze's largest strategic customers. They have requested a feature (migrating version history for a specific file type) that the CloudFuze product does not currently support. They hint that their contract renewal may depend on it. You cannot promise the feature or a delivery date, as Product has not reviewed the request.",
+  "task": "Explain the product-request process and manage expectations.",
+  "metrics": [
+   {
+    "name": "Thanks the customer and acknowledges the business need",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clearly states the feature is not currently supported",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the product-request and review process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not promise the feature or a date",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to a follow-up after the Product review",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E12",
+  "part": "EMAIL",
+  "ordinal": 12,
+  "category": "Product / Engineering",
+  "title": "Product Bug Affecting Customer",
+  "scenario": "You are the Support Lead. A customer reported that file timestamps are being changed to the migration date instead of keeping the original 'last modified' date. Engineering has now confirmed this is a product defect in the current release. A temporary workaround exists (a post-migration metadata correction script), and Engineering is working on a permanent fix. The customer needs to be informed.",
+  "task": "Communicate issue, ownership, workaround, and next steps.",
+  "metrics": [
+   {
+    "name": "Acknowledges the impact and confirms it is a product defect",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Takes ownership on behalf of CloudFuze",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the workaround and its limitations",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares next steps for the permanent fix",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to a time for the next update",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E13",
+  "part": "EMAIL",
+  "ordinal": 13,
+  "category": "Product / Engineering",
+  "title": "Release Delay",
+  "scenario": "You are the Release Manager. A CloudFuze product release was planned for this Friday and has been communicated to customers, Sales, and Support. During final QA testing, the team found two critical issues that could cause data sync failures. Leadership has decided to delay the release by one week to fix and retest. Several stakeholders are expecting the release and have planned around it.",
+  "task": "Write an email to affected stakeholders.",
+  "metrics": [
+   {
+    "name": "Clearly states the release is delayed and the new date",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the reason (critical QA findings) simply",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains impact for each stakeholder group",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shows that quality is the priority",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives guidance for customer-facing teams",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E14",
+  "part": "EMAIL",
+  "ordinal": 14,
+  "category": "Product / Engineering",
+  "title": "Customer Requests Custom Development",
+  "scenario": "You are the Solutions Engineer. A customer has asked CloudFuze to build a custom feature for their environment, such as a special folder-renaming rule and a custom report format. They expect a quick confirmation and a delivery date. Before any commitment, Engineering must assess feasibility, effort, cost, and impact on the standard product.",
+  "task": "Explain the assessment process before committing to delivery.",
+  "metrics": [
+   {
+    "name": "Thanks the customer for the request",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the assessment steps (feasibility, effort, cost, impact)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not commit to delivery before assessment",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for detailed requirements",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a timeline for sharing the assessment outcome",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E15",
+  "part": "EMAIL",
+  "ordinal": 15,
+  "category": "Product / Engineering",
+  "title": "Production Bug During Business Hours",
+  "scenario": "You are the Engineering Manager on duty. During business hours, a critical production issue started affecting multiple customers: migration jobs are getting stuck in 'In Progress' status and not completing. Support has already received complaints from at least five customers. The root cause is not yet known. You need to inform internal teams (Support, Delivery, Sales, and Leadership) about the situation.",
+  "task": "Write an internal email explaining situation and immediate actions.",
+  "metrics": [
+   {
+    "name": "Clear subject line and summary of impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States affected customers and symptoms",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists immediate actions and owners",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not speculate on root cause",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets the update cadence and guidance for customer-facing teams",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E16",
+  "part": "EMAIL",
+  "ordinal": 16,
+  "category": "Product / Engineering",
+  "title": "SLA Breach",
+  "scenario": "You are the Support Manager. A customer raised a P1 (highest priority) ticket because their migration was completely blocked. The committed SLA for resolving P1 issues is 4 hours, but the issue took 9 hours to resolve due to delays in identifying the right engineer. The issue is now fixed, but the SLA was clearly breached and the customer is unhappy.",
+  "task": "Acknowledge the breach and explain corrective actions.",
+  "metrics": [
+   {
+    "name": "Acknowledges the SLA breach directly, without excuses",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States the timeline of what happened",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains why the delay happened (factually)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists corrective and preventive actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers a follow-up or review discussion",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E17",
+  "part": "EMAIL",
+  "ordinal": 17,
+  "category": "Product / Engineering",
+  "title": "Repeated Defects",
+  "scenario": "You are the QA/Engineering Lead. The same defect, where shared links are not preserved after migration, has appeared again in the last three releases, even though it was marked as 'fixed' each time. Customers and Support are frustrated. Leadership has asked for an explanation of why this keeps happening and what will be done to stop it permanently.",
+  "task": "Explain the problem to leadership and propose preventive measures.",
+  "metrics": [
+   {
+    "name": "Summarises the defect history clearly (3 releases)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains business and customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies likely gaps (testing, root cause analysis, release checks)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes specific preventive measures",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests leadership support if needed",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E18",
+  "part": "EMAIL",
+  "ordinal": 18,
+  "category": "Product / Engineering",
+  "title": "QA Missed a Critical Bug",
+  "scenario": "You are the QA Manager. A serious bug (incorrect permission mapping for shared folders) reached production even though the release passed QA validation. Several customers were affected. Leadership wants to understand what happened. Some people are already blaming individual testers, but the real cause appears to be gaps in test coverage and process.",
+  "task": "Outline RCA and improvement plan without blaming individuals.",
+  "metrics": [
+   {
+    "name": "States what happened and the customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Focuses on process gaps, not individuals",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Outlines RCA steps and findings so far",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes improvements (test coverage, review gates)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a timeline and owners for the improvements",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E19",
+  "part": "EMAIL",
+  "ordinal": 19,
+  "category": "Product / Engineering",
+  "title": "Emergency Release",
+  "scenario": "You are the Engineering Manager. A critical bug in production is causing failures for several customers, and Engineering needs to deploy an emergency fix today, outside the normal release cycle. The fix has been tested only in a limited way because of time pressure. Stakeholders (Support, Delivery, Sales, and Leadership) need to know what is changing, the risks, the testing done, and what happens if the fix fails.",
+  "task": "Inform stakeholders about change, risk, testing, and rollback plan.",
+  "metrics": [
+   {
+    "name": "Explains what is changing and why it is urgent",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States the testing done and its limits",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the risks clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Describes the rollback plan",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives timing, owners and monitoring plan",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E20",
+  "part": "EMAIL",
+  "ordinal": 20,
+  "category": "Product / Engineering",
+  "title": "Product Roadmap Conflict",
+  "scenario": "You are the Product Manager. You have learned that a Sales representative promised a prospective customer a feature that is not on the Product roadmap and has no planned delivery date. The customer is now asking when it will be available. Sales and Product teams have different views, and there is a risk of losing customer trust.",
+  "task": "Write an email to align Sales and Product.",
+  "metrics": [
+   {
+    "name": "States the facts neutrally, without blaming Sales",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the customer impact and risk",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a joint discussion to agree on a response",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests a process to avoid this in future",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clear next steps and owners",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E21",
+  "part": "EMAIL",
+  "ordinal": 21,
+  "category": "Internal Collaboration",
+  "title": "Engineering Dependency",
+  "scenario": "You are the Project Manager for a customer migration. The project is blocked because Engineering has not yet delivered a connector fix that was promised two weeks ago. The customer is asking for updates, and the delay is starting to affect the project timeline. You want Engineering to act quickly but also keep a good working relationship with the team.",
+  "task": "Request action while maintaining collaboration.",
+  "metrics": [
+   {
+    "name": "Explains the dependency and its customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests specific action and a date",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Polite, collaborative tone, without blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers help or information to unblock",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Mentions escalation path only if needed",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E22",
+  "part": "EMAIL",
+  "ordinal": 22,
+  "category": "Internal Collaboration",
+  "title": "Migration Team Dependency",
+  "scenario": "You are an Engineer working on a migration-related issue. To find the root cause, you need specific information from the Migration team: job IDs, error logs, source and destination details, and the exact time the issue happened. Without this information, you cannot continue the investigation, and the customer is waiting for a fix.",
+  "task": "Request the required details.",
+  "metrics": [
+   {
+    "name": "States clearly what information is needed and why",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists exact items (job IDs, logs, times, environment details)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a deadline linked to customer urgency",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Polite and easy to act on",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers a quick call if helpful",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E23",
+  "part": "EMAIL",
+  "ordinal": 23,
+  "category": "Internal Collaboration",
+  "title": "QA Dependency",
+  "scenario": "You are the Release Manager. A release is ready from the Engineering side but is waiting for QA validation, which was expected two days ago. A key customer is waiting for a fix included in this release, and Sales has already informed them it is coming soon. You need an update from QA and want to highlight the business impact of further delay.",
+  "task": "Request an update and highlight business impact.",
+  "metrics": [
+   {
+    "name": "Requests a specific status and expected completion date",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the business impact of further delay",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks whether QA needs anything to proceed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Collaborative, not accusatory",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E24",
+  "part": "EMAIL",
+  "ordinal": 24,
+  "category": "Internal Collaboration",
+  "title": "Cross-Team Miscommunication",
+  "scenario": "You are the Delivery Manager. Sales believes they promised the customer a migration completion within 2 weeks, Product believes only standard features were committed, and Engineering thinks a custom change was agreed. The customer is expecting a specific outcome, and each team is working toward a different understanding. This confusion is creating risk for the project.",
+  "task": "Propose a common understanding.",
+  "metrics": [
+   {
+    "name": "Summarises each team's understanding neutrally",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies the gaps or conflicts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a single agreed understanding",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests confirming it with the customer",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines owners and next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E25",
+  "part": "EMAIL",
+  "ordinal": 25,
+  "category": "Internal Collaboration",
+  "title": "Ownership Is Unclear",
+  "scenario": "You are a Delivery Lead. A customer issue (repeated sync failures) has been discussed in multiple meetings and email threads with Support, Engineering, and Delivery. Everyone agrees it is important, but no one has clearly taken ownership. As a result, the customer has not received any concrete action or update in five days.",
+  "task": "Establish ownership and next steps.",
+  "metrics": [
+   {
+    "name": "Summarises the issue and the customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Highlights that no owner has been agreed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes or assigns a clear owner",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists immediate next steps and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a customer update plan",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E26",
+  "part": "EMAIL",
+  "ordinal": 26,
+  "category": "Internal Collaboration",
+  "title": "Team Member Missed Commitment",
+  "scenario": "You are a Team Lead. A team member committed to completing a customer migration report by Wednesday, but it was not delivered and no update was given. This caused a delay in a customer meeting. This is the first time it has happened with this person, and you want to address it constructively, without being harsh.",
+  "task": "Address the issue constructively.",
+  "metrics": [
+   {
+    "name": "States the facts and impact, without blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks to understand what happened",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Reinforces the importance of updating early if delays occur",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on the next steps and new date",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Supportive, constructive tone",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E27",
+  "part": "EMAIL",
+  "ordinal": 27,
+  "category": "Internal Collaboration",
+  "title": "Multiple Priorities",
+  "scenario": "You are the Engineering Manager. Three urgent customer issues have come in at the same time: one is a migration blocked for a large enterprise customer, one is a data sync error for a mid-sized customer, and one is a reporting issue for a strategic account. All three teams want the same two senior engineers to work on their issue immediately.",
+  "task": "Propose prioritization.",
+  "metrics": [
+   {
+    "name": "Summarises all three issues and their impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Uses clear criteria for priority (impact, urgency, customer value)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a priority order with reasoning",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests a decision or agreement",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States how the other customers will be updated",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E28",
+  "part": "EMAIL",
+  "ordinal": 28,
+  "category": "Internal Collaboration",
+  "title": "Resource Shortage",
+  "scenario": "You are the Delivery Manager. A new large project (5,000 users) has been signed and is scheduled to start next week. The current Migration Engineering team is already fully booked on other projects. Without at least two additional engineers, the new project timeline will be at risk. You need to request resource allocation from leadership.",
+  "task": "Request resource allocation.",
+  "metrics": [
+   {
+    "name": "States the requirement and project timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the risk if resources are not added",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Specifies number and type of engineers needed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests options (reallocation, hiring, contractors)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests a decision by a specific date",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E29",
+  "part": "EMAIL",
+  "ordinal": 29,
+  "category": "Internal Collaboration",
+  "title": "Employee Handover",
+  "scenario": "You are the Team Manager. A senior engineer who manages critical activities for three key customers has resigned and will leave in three weeks. They hold important knowledge about customer environments, custom scripts, and ongoing issues that is not fully documented. You need to make sure there is no disruption to customers.",
+  "task": "Request a structured handover plan.",
+  "metrics": [
+   {
+    "name": "Highlights the risk to customers",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests a structured handover plan",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists what must be covered (documentation, scripts, contacts, open issues)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a timeline and the receiving owner",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for customer introductions where needed",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E30",
+  "part": "EMAIL",
+  "ordinal": 30,
+  "category": "Internal Collaboration",
+  "title": "New Employee Onboarding Delay",
+  "scenario": "You are the Team Lead. A new engineer joined the team three days ago but still cannot start work because their laptop, system access, VPN, and test environment setup are not complete. IT, Admin, and the Security team are each waiting on someone else. The new joiner is idle, and the project needs them urgently.",
+  "task": "Coordinate with relevant teams.",
+  "metrics": [
+   {
+    "name": "Explains the impact of the delay on the project",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists exactly what is pending and with which team",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests target dates from each team",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a single coordinator",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Collaborative tone",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E31",
+  "part": "EMAIL",
+  "ordinal": 31,
+  "category": "Leadership / Management",
+  "title": "Poor Project Performance",
+  "scenario": "You are the Delivery Manager. A customer project has missed its last four milestones. The reasons include late customer inputs, internal resource gaps, and repeated technical issues. Leadership has asked for a written summary explaining why the project keeps missing milestones and what will be done to bring it back on track.",
+  "task": "Summarize reasons and proposed corrective actions.",
+  "metrics": [
+   {
+    "name": "Summarises the missed milestones factually",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the root causes clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Separates internal and external causes without blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes corrective actions with owners",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a revised timeline and how progress will be tracked",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E32",
+  "part": "EMAIL",
+  "ordinal": 32,
+  "category": "Leadership / Management",
+  "title": "Resource Utilization Concern",
+  "scenario": "You are a Delivery Manager. Utilization reports show that some team members are working over 55 hours a week and are close to burnout, while others are at around 50% utilization. This imbalance is affecting delivery quality and team morale. You need to propose a better way to distribute work across the team.",
+  "task": "Propose resource optimization.",
+  "metrics": [
+   {
+    "name": "Shares utilisation data clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the impact on delivery and wellbeing",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes redistribution of work",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests skill development or cross-training",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines how utilisation will be monitored",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E33",
+  "part": "EMAIL",
+  "ordinal": 33,
+  "category": "Leadership / Management",
+  "title": "Delivery Metrics Decline",
+  "scenario": "You are the Delivery Head. Key delivery metrics, such as on-time completion, first-time-right migrations, and customer response time, have declined for three consecutive months. Leadership has noticed the trend and wants your observations on why this is happening and what you recommend to improve it.",
+  "task": "Share observations and recommendations.",
+  "metrics": [
+   {
+    "name": "Presents the trend with data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares observations on causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives specific, practical recommendations",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Prioritises actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes how progress will be measured",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E34",
+  "part": "EMAIL",
+  "ordinal": 34,
+  "category": "Leadership / Management",
+  "title": "Customer Satisfaction Decline",
+  "scenario": "You are the Customer Success Manager. Recent customer surveys and feedback show that satisfaction scores have dropped from 4.5 to 3.6 (out of 5) over the last quarter. Common complaints include slow responses, unclear communication, and repeated issues. Leadership wants a plan to recover customer trust and improve satisfaction.",
+  "task": "Propose a customer recovery plan.",
+  "metrics": [
+   {
+    "name": "Summarises the satisfaction decline with data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies the main causes from feedback",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a recovery plan with actions and owners",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines success measures",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a timeline for review",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E35",
+  "part": "EMAIL",
+  "ordinal": 35,
+  "category": "Leadership / Management",
+  "title": "Repeated Escalations",
+  "scenario": "You are the Account Manager. One customer has escalated to senior management four times in the last month for different reasons: delayed updates, a failed batch, a missed meeting, and a reporting error. Leadership wants to understand why these escalations keep happening and what will prevent them in the future.",
+  "task": "Explain the pattern and preventive actions.",
+  "metrics": [
+   {
+    "name": "Summarises the four escalations",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies the common pattern or root cause",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes preventive actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shows ownership",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines how improvement will be tracked",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E36",
+  "part": "EMAIL",
+  "ordinal": 36,
+  "category": "Leadership / Management",
+  "title": "Project Risk Escalation",
+  "scenario": "You are a Senior Delivery Lead. You have identified a major risk on a large project: the destination platform's API limits may slow the migration so much that the go-live date will be missed. The Project Manager believes the risk is manageable and does not want to escalate. You believe leadership needs to know now so they can make timely decisions.",
+  "task": "Explain why leadership visibility is required.",
+  "metrics": [
+   {
+    "name": "Explains the risk clearly and objectively",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Respectfully acknowledges the Project Manager's view",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains why leadership visibility is needed now",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes mitigation options",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States the decision needed and by when",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E37",
+  "part": "EMAIL",
+  "ordinal": 37,
+  "category": "Leadership / Management",
+  "title": "Team Morale Issue",
+  "scenario": "You are a Team Manager. Your team has been under heavy pressure for the last four months, with tight deadlines, late-night work, and weekend support. You are noticing signs of low morale: less participation in meetings, more sick leave, and some negative comments. Delivery commitments still need to be met.",
+  "task": "Propose steps to improve morale without compromising delivery.",
+  "metrics": [
+   {
+    "name": "Acknowledges the pressure and its effects on the team",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares observations without exaggeration",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes practical steps (workload balance, recognition, time off)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shows how delivery will still be protected",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a follow-up to track morale",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E38",
+  "part": "EMAIL",
+  "ordinal": 38,
+  "category": "Leadership / Management",
+  "title": "Performance Improvement",
+  "scenario": "You are a Team Manager. One team member's performance has been below expectations for the last three months: missed deadlines, quality issues in deliverables, and limited communication. Informal feedback has not helped. You now need to formally document the concerns and propose a structured improvement plan.",
+  "task": "Document concerns and proposed improvement plan.",
+  "metrics": [
+   {
+    "name": "States specific examples and dates",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Describes the impact on the team and customers",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a clear improvement plan with goals",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists support to be provided",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines a review timeline and next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E39",
+  "part": "EMAIL",
+  "ordinal": 39,
+  "category": "Leadership / Management",
+  "title": "Process Improvement Proposal",
+  "scenario": "You are an Operations Lead. The same operational problem keeps happening: migration batches are started without completing the pre-migration checklist, leading to failures and rework. This has happened at least six times in two months. You want to propose a process change to stop it from happening again.",
+  "task": "Propose a process change.",
+  "metrics": [
+   {
+    "name": "Describes the problem and how often it occurs",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the impact (failures, rework)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a specific process change",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how it will be implemented and monitored",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests approval or support",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E40",
+  "part": "EMAIL",
+  "ordinal": 40,
+  "category": "Leadership / Management",
+  "title": "Automation Opportunity",
+  "scenario": "You are a Team Lead. Your team spends around 15 hours every week manually preparing customer migration status reports by copying data from multiple tools into spreadsheets. You believe this can be automated using an approved AI tool, saving time and reducing errors. You need management approval to proceed.",
+  "task": "Propose automation, benefits, risks, and next steps.",
+  "metrics": [
+   {
+    "name": "Describes the current manual process and the time spent",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the proposed automation",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists benefits (time saved, fewer errors)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Mentions risks and data/governance considerations",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes next steps (pilot, approval)",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E41",
+  "part": "EMAIL",
+  "ordinal": 41,
+  "category": "Neutara / AI / Process",
+  "title": "AI Tool Adoption",
+  "scenario": "You are a Team Manager. The company has approved an AI tool that can help with repetitive tasks like summarizing logs and drafting reports. However, your team is still doing these tasks manually and spending a lot of time on them. Some team members are unsure how to use the tool, and others doubt it will help.",
+  "task": "Encourage adoption based on business value.",
+  "metrics": [
+   {
+    "name": "Explains the business value with examples",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges hesitation or uncertainty",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers training and support",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a simple starting point",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets expectations for adoption",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E42",
+  "part": "EMAIL",
+  "ordinal": 42,
+  "category": "Neutara / AI / Process",
+  "title": "AI Governance Concern",
+  "scenario": "You are a Team Manager. You noticed that an employee has been pasting customer migration logs and internal documents into a public, unapproved AI tool to save time. This may expose sensitive customer and company data. The employee likely did not intend harm, but this is a serious governance and security concern.",
+  "task": "Address the concern professionally.",
+  "metrics": [
+   {
+    "name": "Raises the concern privately and respectfully",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the data and security risk",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies company policy and approved tools",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests a safe alternative",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines next steps (e.g. inform security if required)",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E43",
+  "part": "EMAIL",
+  "ordinal": 43,
+  "category": "Neutara / AI / Process",
+  "title": "Internal Tool Adoption",
+  "scenario": "You are the Operations Manager. Neutara launched a new internal ticketing tool a month ago to track requests and improve response times. However, many employees still send requests through email, which makes tracking difficult and causes requests to be missed. You need to remind everyone about the new process and why it matters.",
+  "task": "Explain the new process.",
+  "metrics": [
+   {
+    "name": "Explains the new process clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains why it matters (tracking, faster response)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives simple steps for raising tickets",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States when email will no longer be accepted",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers help or training",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E44",
+  "part": "EMAIL",
+  "ordinal": 44,
+  "category": "Neutara / AI / Process",
+  "title": "SprintBoard Adoption",
+  "scenario": "You are the Engineering Manager. The Engineering team is not consistently updating SprintBoard (the sprint and task tracking tool). Tasks are not moved, effort is not logged, and statuses are outdated. As a result, sprint reports and leadership dashboards are inaccurate, and planning decisions are being made on wrong data.",
+  "task": "Explain why accurate data matters for planning and reporting.",
+  "metrics": [
+   {
+    "name": "Explains why accurate data matters (planning, reporting, decisions)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives examples of the impact of outdated data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States clear expectations (what to update and how often)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers support",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how compliance will be checked",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E45",
+  "part": "EMAIL",
+  "ordinal": 45,
+  "category": "Neutara / AI / Process",
+  "title": "SLA Compliance",
+  "scenario": "You are the Support/Operations Head. Reports show that several teams have repeatedly missed ticket SLAs over the last two months, with response times often exceeding committed limits. This is affecting customer satisfaction and internal service quality. You need to raise this with the team managers and ask them for corrective action.",
+  "task": "Explain concern and ask managers for corrective action.",
+  "metrics": [
+   {
+    "name": "Shares SLA data clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the customer and business impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests corrective action plans from managers",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a deadline for the plans",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers support or resources",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E46",
+  "part": "EMAIL",
+  "ordinal": 46,
+  "category": "Neutara / AI / Process",
+  "title": "Process Change During Restructure",
+  "scenario": "You are a Department Manager. As part of organizational restructuring, some responsibilities, such as customer onboarding and certain support tasks, are moving from one team to another. Employees have heard rumors and are anxious about what this means for them. You need to explain the change clearly without creating fear.",
+  "task": "Explain the change without creating uncertainty or fear.",
+  "metrics": [
+   {
+    "name": "Explains what is changing and why",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies what is not changing",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains timeline and next steps",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges concerns and offers a forum for questions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Avoids speculation",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E47",
+  "part": "EMAIL",
+  "ordinal": 47,
+  "category": "Neutara / AI / Process",
+  "title": "Role Transition",
+  "scenario": "You are a Team Manager. Due to organizational restructuring, one employee's responsibilities are changing. They will move from handling customer support tickets to supporting migration quality checks. The employee has not yet been fully informed, and you need to communicate the transition in a professional and respectful way.",
+  "task": "Communicate the transition professionally.",
+  "metrics": [
+   {
+    "name": "Explains the new responsibilities clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the reason for the change",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges the impact on the employee",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the support and training available",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Invites questions and a one-to-one discussion",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E48",
+  "part": "EMAIL",
+  "ordinal": 48,
+  "category": "Neutara / AI / Process",
+  "title": "New Operating Model",
+  "scenario": "You are a Senior Manager at Neutara. The company is moving toward an AI-enabled operating model, where AI tools will support tasks like reporting, ticket triage, and documentation. Employees have questions about what this means for their roles, what is expected from them, and how it will benefit them and the company.",
+  "task": "Explain the change, expectations, and benefits.",
+  "metrics": [
+   {
+    "name": "Explains what the new model means in simple terms",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies expectations from employees",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains benefits for individuals and the company",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Addresses concerns about roles honestly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares support, training and next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E49",
+  "part": "EMAIL",
+  "ordinal": 49,
+  "category": "Neutara / AI / Process",
+  "title": "Leadership Decision Communication",
+  "scenario": "You are a Department Manager. Senior leadership has made a decision (for example, changing shift timings or merging two teams) that will affect several teams. Some employees are likely to have concerns or disagree with it. You need to communicate the decision clearly, explain the reasons, and acknowledge their concerns.",
+  "task": "Communicate the decision clearly while acknowledging concerns.",
+  "metrics": [
+   {
+    "name": "States the decision clearly at the start",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the reasons behind it",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the impact and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges concerns respectfully",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how questions or feedback will be handled",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "E50",
+  "part": "EMAIL",
+  "ordinal": 50,
+  "category": "Neutara / AI / Process",
+  "title": "Difficult Organizational Change",
+  "scenario": "You are a Department Head. Your team is being restructured, and some responsibilities will be consolidated into fewer roles. A few employees will have changed responsibilities, and some may report to a new manager. People are worried about job security and their future. You need to explain the change with care and clarity.",
+  "task": "Explain the change with empathy, clarity, and professionalism.",
+  "metrics": [
+   {
+    "name": "Explains the change clearly and honestly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shows empathy for concerns",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies what is confirmed and what is still being finalised",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains support available",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Invites questions and one-to-one discussions",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C01",
+  "part": "TEAMS",
+  "ordinal": 1,
+  "category": "Customer / Project",
+  "title": "Migration Delay",
+  "scenario": "You are the Migration Project Manager. The team told the customer last week that their OneDrive migration would finish today. Because of API throttling on the destination side, about 20% of the data is still being processed. It is now late afternoon, and the customer sends this message on Teams chat: “Your team promised this migration would be completed today. Why is it still running?”",
+  "task": "Respond clearly, acknowledge the concern, provide facts/next action, and avoid overpromising.",
+  "metrics": [
+   {
+    "name": "Acknowledges the frustration and the missed commitment",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares the current status and reason (throttling, % remaining)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a realistic next update or ETA only if confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Avoids overpromising",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Short, clear chat format",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C02",
+  "part": "TEAMS",
+  "ordinal": 2,
+  "category": "Customer / Project",
+  "title": "No Updates",
+  "scenario": "You are the Project Coordinator on an active migration. A batch failure happened this morning and the team has been working on it, but no one sent the customer an update. The customer's IT lead now messages you in the shared chat: “Nobody has updated us for the last six hours.” You know the issue is under investigation, but a final fix is not yet confirmed.",
+  "task": "Acknowledge, provide current status if known, and commit to the next update.",
+  "metrics": [
+   {
+    "name": "Apologises for the lack of updates",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a quick current status",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Is honest about what is still unknown",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to a specific next update time",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Names who will update",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C03",
+  "part": "TEAMS",
+  "ordinal": 3,
+  "category": "Customer / Project",
+  "title": "Senior Escalation",
+  "scenario": "You are the Support Engineer on duty. A migration issue has left part of the customer's sales team without access to their files for most of the day. The customer's IT Director messages you directly: “This is now affecting our business. I need someone senior on this immediately.” Your manager is available but currently in another meeting.",
+  "task": "Handle urgency and route/escalate appropriately.",
+  "metrics": [
+   {
+    "name": "Acknowledges urgency and business impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Responds quickly and calmly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms escalation to a senior person and when they will join",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares what is already being done",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Stays engaged until handover",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C04",
+  "part": "TEAMS",
+  "ordinal": 4,
+  "category": "Customer / Project",
+  "title": "Guarantee Request",
+  "scenario": "You are the Migration Engineer. The final migration batch is running, and the customer wants everything completed before their users log in tomorrow morning. Progress looks good, but there is still some risk from throttling and possible file errors. The customer messages you: “Can you guarantee the migration will finish tonight?”",
+  "task": "Manage expectations without making an unsupported commitment.",
+  "metrics": [
+   {
+    "name": "Does not give a guarantee",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares current progress and remaining risks",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains what is being done to finish on time",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers to monitor and update at set times",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Positive but honest tone",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C05",
+  "part": "TEAMS",
+  "ordinal": 5,
+  "category": "Customer / Project",
+  "title": "Missing Files",
+  "scenario": "You are the Migration Engineer who completed a SharePoint migration last week. Some users have now reported that they cannot find certain files. The cause is not yet known. The customer messages you in the project chat: “We found missing files after migration.” They sound worried and want to know what you will do.",
+  "task": "Acknowledge and explain immediate investigation steps.",
+  "metrics": [
+   {
+    "name": "Acknowledges concern and takes it seriously",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for examples (users, file paths)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains immediate investigation steps",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not guess the cause",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to the next update time",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C06",
+  "part": "TEAMS",
+  "ordinal": 6,
+  "category": "Customer / Project",
+  "title": "Conflicting Information",
+  "scenario": "You are the Project Manager. Yesterday, an engineer from your team told the customer on a call that the issue was caused by their source system. Today, another engineer said it was a CloudFuze configuration issue. The customer is confused and frustrated, and messages you: “Your engineer told us something completely different yesterday.”",
+  "task": "Clarify facts and restore confidence.",
+  "metrics": [
+   {
+    "name": "Acknowledges the confusion",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not blame either engineer",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to confirming the correct facts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives the confirmed position or time to confirm",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a single point of contact",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C07",
+  "part": "TEAMS",
+  "ordinal": 7,
+  "category": "Customer / Project",
+  "title": "ETA Without Confirmation",
+  "scenario": "You are the Support Engineer handling a customer ticket. Engineering is still investigating the issue and has not confirmed when a fix will be ready. The customer messages you: “Just give me an ETA. When will this be fixed?” You do not yet have a confirmed timeline from Engineering.",
+  "task": "Respond without inventing an ETA.",
+  "metrics": [
+   {
+    "name": "Acknowledges the need for a timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains honestly that the ETA is not yet confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares what Engineering is doing",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to when an ETA will be shared",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not invent a date",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C08",
+  "part": "TEAMS",
+  "ordinal": 8,
+  "category": "Customer / Project",
+  "title": "Process Bypass",
+  "scenario": "You are the Migration Engineer. The customer is under deadline pressure and asks you on chat to skip the pre-migration validation and pilot batch, and to start the full migration directly to save two days. Skipping these steps increases the risk of permission errors, failed batches, and data issues.",
+  "task": "Explain risks and propose a safe alternative.",
+  "metrics": [
+   {
+    "name": "Acknowledges the time pressure",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the risks of skipping steps clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a safe, faster alternative",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not agree to bypass the process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Seeks agreement on the next step",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C09",
+  "part": "TEAMS",
+  "ordinal": 9,
+  "category": "Customer / Project",
+  "title": "Migration Performance",
+  "scenario": "You are the Migration Engineer. The customer messages you on chat saying CloudFuze is much slower than the tool they used for a previous migration and asks why. Speed can depend on many factors, such as API throttling, file sizes, number of files, network, and the destination platform's limits, and you have not yet looked into their specific case.",
+  "task": "Respond empathetically and investigate relevant factors.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern empathetically",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Avoids being defensive or comparing tools negatively",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains factors that affect speed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers to review their specific job settings",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to findings and follow-up",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C10",
+  "part": "TEAMS",
+  "ordinal": 10,
+  "category": "Customer / Project",
+  "title": "Open Issue",
+  "scenario": "You are the Support Engineer. A customer's migration issue (some files failing with permission errors) has been open for three days. Engineering is working on it but is waiting for a log export from the customer's side. The customer messages you: “Why has this issue been open for three days?”",
+  "task": "Explain status, ownership, blockers, and next step.",
+  "metrics": [
+   {
+    "name": "Acknowledges the delay",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the current status and the blocker (log export)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies ownership and what is needed from the customer",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States next step and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Polite and non-blaming",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C11",
+  "part": "TEAMS",
+  "ordinal": 11,
+  "category": "Internal Teams",
+  "title": "Engineering/Migration Friction",
+  "scenario": "You are a Migration Engineer. You escalated a customer issue to Engineering today, but some key details, like the error logs and job IDs, were only shared now. The Engineering lead messages you on chat in a frustrated tone: “Why didn't you provide this information earlier?” The customer is still waiting for a fix.",
+  "task": "Respond without blame and focus on resolution.",
+  "metrics": [
+   {
+    "name": "Stays calm and non-defensive",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges the delay in sharing information",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares the details now",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Focuses on resolution",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C12",
+  "part": "TEAMS",
+  "ordinal": 12,
+  "category": "Internal Teams",
+  "title": "Engineering ETA",
+  "scenario": "You are an Engineering Lead. The Migration team messages you asking: “When will you fix this?” about a connector issue affecting one customer. Your team is currently handling two other high-priority issues, and you cannot start on this one immediately. You need to give an honest and realistic response.",
+  "task": "Prioritize and communicate a realistic response.",
+  "metrics": [
+   {
+    "name": "Acknowledges the urgency",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains current priorities honestly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a realistic timeline or when one will be shared",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests how to escalate priority if business impact is high",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clear and respectful",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C13",
+  "part": "TEAMS",
+  "ordinal": 13,
+  "category": "Internal Teams",
+  "title": "QA Blocker",
+  "scenario": "You are the Release Manager. A release is scheduled for later this week. QA messages you on chat: “We can't validate this because the build is unstable.” The build has crashed twice during testing, and Engineering has not yet been informed. The release date is now at risk.",
+  "task": "Acknowledge and coordinate next steps.",
+  "metrics": [
+   {
+    "name": "Acknowledges the blocker",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Informs Engineering immediately",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for details (logs, failure points)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Coordinates next steps and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Flags the release-date risk",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C14",
+  "part": "TEAMS",
+  "ordinal": 14,
+  "category": "Internal Teams",
+  "title": "Sales ETA Request",
+  "scenario": "You are a Project Manager. A Sales representative messages you asking for a firm date to share with a prospective customer about when a new feature will be ready. Engineering has not confirmed any timeline yet, and the effort has not been estimated. Sales is pushing to close the deal this week.",
+  "task": "Avoid committing without validation.",
+  "metrics": [
+   {
+    "name": "Acknowledges the Sales need",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains why a date cannot be committed yet",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States what is needed to give an estimate",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to when an update will be available",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests safe wording Sales can use with the customer",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C15",
+  "part": "TEAMS",
+  "ordinal": 15,
+  "category": "Internal Teams",
+  "title": "Unsupported Feature",
+  "scenario": "You are the Delivery Manager. The Product Manager messages you on chat, upset that a Sales representative promised a customer a feature that CloudFuze does not support and is not on the roadmap. Product asks you: “Why did Sales promise this?” You were not part of the original sales conversation.",
+  "task": "Clarify facts and propose alignment.",
+  "metrics": [
+   {
+    "name": "Stays neutral; no blame on Sales",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares known facts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges the customer risk",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a joint discussion with Sales and Product",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C16",
+  "part": "TEAMS",
+  "ordinal": 16,
+  "category": "Internal Teams",
+  "title": "Manager Asking for Update",
+  "scenario": "You are the Project Manager. Your manager messages you on chat: “Why is the XYZ project delayed? I need an update right now.” The delay is due to late customer credentials and a failed migration batch that is being rerun. Your manager has a leadership meeting in 10 minutes and needs a short, clear answer.",
+  "task": "Give a concise factual update and next actions.",
+  "metrics": [
+   {
+    "name": "Gives a short, factual reason for the delay",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States the impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lists the next actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a revised date if known",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Concise; fits a busy manager",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C17",
+  "part": "TEAMS",
+  "ordinal": 17,
+  "category": "Internal Teams",
+  "title": "Ownership Dispute",
+  "scenario": "You are the Incident Coordinator. A production issue is affecting a customer's migration. In the group chat, two engineers are arguing about who should own it: one says it is a connector issue, the other says it is a platform issue. Meanwhile, the customer is waiting and no one has started working on it.",
+  "task": "Bring focus back to customer impact and assign/confirm ownership.",
+  "metrics": [
+   {
+    "name": "Refocuses on customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Stops the debate politely",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns an interim owner",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a next step and time",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests reviewing ownership later",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C18",
+  "part": "TEAMS",
+  "ordinal": 18,
+  "category": "Internal Teams",
+  "title": "Not My Responsibility",
+  "scenario": "You are a Team Lead. You asked a team member to look into a customer issue that is related to their area. They reply on chat: “This isn't my responsibility.” The issue is urgent, and the customer is waiting for an update.",
+  "task": "Handle professionally and focus on getting the issue resolved.",
+  "metrics": [
+   {
+    "name": "Stays calm and respectful",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains why their involvement is needed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Focuses on the customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies ownership or proposes an owner",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a next step",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C19",
+  "part": "TEAMS",
+  "ordinal": 19,
+  "category": "Internal Teams",
+  "title": "Blame Between Teams",
+  "scenario": "You are a Project Manager. In a project group chat, a team member writes that the project is delayed because another team did not deliver on time. Members of the other team are also in the chat and are starting to react. The focus is moving from solving the problem to blaming each other.",
+  "task": "Avoid blame and move toward facts/actions.",
+  "metrics": [
+   {
+    "name": "Acknowledges concerns neutrally",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Redirects from blame to facts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Focuses on what can be done now",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a review of the issue later",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on next steps and owners",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C20",
+  "part": "TEAMS",
+  "ordinal": 20,
+  "category": "Internal Teams",
+  "title": "Defensive Colleague",
+  "scenario": "You are a Team Lead. You gave a colleague feedback on chat that their customer report had several errors. They responded defensively, saying they were overloaded and that others make mistakes too. The conversation is becoming tense, and you want to keep it constructive.",
+  "task": "De-escalate and maintain a constructive tone.",
+  "metrics": [
+   {
+    "name": "Stays calm and empathetic",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges their workload",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Restates the feedback with specific facts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Focuses on improvement, not fault",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers support and agrees on next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C21",
+  "part": "TEAMS",
+  "ordinal": 21,
+  "category": "Incident Management",
+  "title": "Multiple P1 Complaints",
+  "scenario": "You are the Incident Manager. A P1 ticket for a platform issue has suddenly received complaints from five different customers within 30 minutes. Support, Engineering, and Account Managers are all messaging in different chats asking for updates. You need to bring order to the situation.",
+  "task": "Prioritize incident coordination and communication.",
+  "metrics": [
+   {
+    "name": "Takes control of coordination",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Creates a single communication channel",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns roles (incident lead, communication owner)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets an update cadence",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Ensures customers receive consistent messages",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C22",
+  "part": "TEAMS",
+  "ordinal": 22,
+  "category": "Incident Management",
+  "title": "SLA About to Breach",
+  "scenario": "You are a Support Team Lead. A P1 ticket's SLA will breach in 30 minutes. The engineer who owns the ticket is on leave today and is not reachable. No one else has picked it up, and the customer is waiting for a response.",
+  "task": "Escalate/assign appropriately and protect the customer experience.",
+  "metrics": [
+   {
+    "name": "Acts immediately",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns a new owner or escalates",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sends a holding update to the customer",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Documents actions taken",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Informs the manager",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C23",
+  "part": "TEAMS",
+  "ordinal": 23,
+  "category": "Incident Management",
+  "title": "Unknown Root Cause",
+  "scenario": "You are the Support Lead. A production issue is affecting customer migrations, and Engineering has not yet found the root cause. A customer messages you asking exactly what caused the problem. Some team members have guesses, but nothing is confirmed.",
+  "task": "Communicate uncertainty honestly without speculation.",
+  "metrics": [
+   {
+    "name": "Is honest that the root cause is not yet confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares known facts and impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains what is being investigated",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to the next update",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not speculate",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C24",
+  "part": "TEAMS",
+  "ordinal": 24,
+  "category": "Incident Management",
+  "title": "Engineering Needs More Time",
+  "scenario": "You are the Support Manager. Engineering says they need two more hours to test and deploy a fix safely. The customer, who is facing business impact, messages you: “We need this fixed now. We can't wait any longer.” You need to balance both sides.",
+  "task": "Manage both technical reality and customer expectations.",
+  "metrics": [
+   {
+    "name": "Acknowledges customer urgency",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains why two hours are needed (safety, testing)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers interim help or workaround if available",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to updates during the wait",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Balances both sides respectfully",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C25",
+  "part": "TEAMS",
+  "ordinal": 25,
+  "category": "Incident Management",
+  "title": "Workaround Available",
+  "scenario": "You are the Support Engineer. A fix for a customer's issue is still in progress, but there is a workaround: the customer can manually re-run failed files in small batches. However, this works only for files under 5 GB and requires extra effort from their team. You need to explain this in chat.",
+  "task": "Communicate the workaround and limitations clearly.",
+  "metrics": [
+   {
+    "name": "Explains the workaround clearly and simply",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States the limitations (under 5 GB, extra effort)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives clear steps",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms the permanent fix is in progress",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers help",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C26",
+  "part": "TEAMS",
+  "ordinal": 26,
+  "category": "Incident Management",
+  "title": "Fix Awaiting Monitoring",
+  "scenario": "You are the Support Engineer. Engineering applied a fix for a production issue an hour ago, and things look stable so far. However, monitoring has not yet confirmed full stability, which usually takes 24 hours. The customer messages you: “So it's fixed now, right? Can we close this?”",
+  "task": "Avoid declaring full resolution prematurely.",
+  "metrics": [
+   {
+    "name": "Shares positive progress",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains that monitoring is still in progress",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not declare full resolution",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States when it can be confirmed (24 hours)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to an update",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C27",
+  "part": "TEAMS",
+  "ordinal": 27,
+  "category": "Incident Management",
+  "title": "Second P1",
+  "scenario": "You are the Incident Manager. The team is already working on a P1 production issue for one customer. A second production issue is now reported by a different customer. The same engineers are needed for both issues, and resources are limited.",
+  "task": "Prioritize and coordinate resources.",
+  "metrics": [
+   {
+    "name": "Assesses the impact of both issues",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Prioritises clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Coordinates or requests additional resources",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Communicates with both customers",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets update cadence",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C28",
+  "part": "TEAMS",
+  "ordinal": 28,
+  "category": "Incident Management",
+  "title": "Data Impact Question",
+  "scenario": "You are the Support Engineer. There was a production issue earlier today. A customer messages you asking: “Has our data been affected?” Engineering is still checking which customers and data were impacted, and you do not have confirmed information yet.",
+  "task": "Do not speculate; confirm facts and provide next update.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not speculate",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares what is confirmed so far",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how impact is being checked",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to the next update",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C29",
+  "part": "TEAMS",
+  "ordinal": 29,
+  "category": "Incident Management",
+  "title": "RCA Before Investigation Complete",
+  "scenario": "You are the Incident Manager. A stakeholder (an Account Manager) messages you asking for the full Root Cause Analysis (RCA) to share with a customer today. Engineering's investigation is still ongoing and is expected to take another two days.",
+  "task": "Explain what is known and what remains under investigation.",
+  "metrics": [
+   {
+    "name": "Explains that the RCA is still in progress",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares what is known so far",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a timeline for the full RCA",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers an interim summary",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not guess the cause",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C30",
+  "part": "TEAMS",
+  "ordinal": 30,
+  "category": "Incident Management",
+  "title": "Leadership One-Line Update",
+  "scenario": "You are the Incident Manager handling an ongoing production incident. A senior leader messages you: “Give me a one-line update.” They are about to join a call with an important customer and need a very short, clear summary.",
+  "task": "Provide concise status, impact, and next action.",
+  "metrics": [
+   {
+    "name": "One or two lines only",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Covers status, impact and next action",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Mentions next update time",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Factual and calm",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "No technical jargon",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C31",
+  "part": "TEAMS",
+  "ordinal": 31,
+  "category": "People / Leadership",
+  "title": "Role Change Question",
+  "scenario": "You are a Team Manager. An employee messages you after hearing about a change to their role: “I don't understand why my responsibilities are changing.” They seem confused and a little worried. Some details of the change are confirmed, but others are still being finalized.",
+  "task": "Respond empathetically and explain what is known.",
+  "metrics": [
+   {
+    "name": "Acknowledges feelings empathetically",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains what is confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Is honest about what is still being finalised",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers a one-to-one discussion",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Supportive tone",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C32",
+  "part": "TEAMS",
+  "ordinal": 32,
+  "category": "People / Leadership",
+  "title": "Restructure Concern",
+  "scenario": "You are a Team Manager. There are rumors in the office about organizational restructuring. An employee messages you privately asking whether the restructuring will affect their role. You know some changes are coming, but final decisions have not been confirmed or announced.",
+  "task": "Communicate only confirmed information and avoid speculation.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares only confirmed information",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not speculate or give false assurance",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains when more information will be shared",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers to talk further",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C33",
+  "part": "TEAMS",
+  "ordinal": 33,
+  "category": "People / Leadership",
+  "title": "Overloaded Employee",
+  "scenario": "You are a Team Lead. You plan to assign a new customer project to a team member. They message you saying they are already overloaded with three ongoing projects and cannot take on another one. You can see from the workload tracker that they are indeed handling a lot.",
+  "task": "Acknowledge workload and discuss prioritization.",
+  "metrics": [
+   {
+    "name": "Acknowledges the workload",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Reviews current priorities together",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Discusses options (reprioritise, delegate, delay)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not dismiss the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a next step",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C34",
+  "part": "TEAMS",
+  "ordinal": 34,
+  "category": "People / Leadership",
+  "title": "Recognition Concern",
+  "scenario": "You are a Team Manager. A high-performing team member messages you saying they feel their work is not being recognized, even though they have handled several difficult customer projects successfully. They sound demotivated.",
+  "task": "Listen, acknowledge, and propose constructive next steps.",
+  "metrics": [
+   {
+    "name": "Listens and acknowledges",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Recognises specific contributions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks what recognition would be meaningful",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes constructive next steps",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Follows up",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C35",
+  "part": "TEAMS",
+  "ordinal": 35,
+  "category": "People / Leadership",
+  "title": "Manager Disagreement",
+  "scenario": "You are an HR Business Partner or Senior Manager. An employee messages you saying they strongly disagree with a recent decision made by their manager, such as a change in their project assignment. They feel the decision was unfair and was not explained to them.",
+  "task": "Handle respectfully and understand the concern.",
+  "metrics": [
+   {
+    "name": "Listens respectfully",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks questions to understand the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not take sides immediately",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the decision process if known",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers a discussion or escalation path",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C36",
+  "part": "TEAMS",
+  "ordinal": 36,
+  "category": "People / Leadership",
+  "title": "Preferential Treatment",
+  "scenario": "You are a Department Manager. An employee messages you complaining that another team gets better treatment, such as more flexible schedules, better projects, or faster approvals. They feel this is unfair to their team.",
+  "task": "Avoid defensiveness and seek facts.",
+  "metrics": [
+   {
+    "name": "Avoids defensiveness",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for specific examples",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to review the facts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a follow-up",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C37",
+  "part": "TEAMS",
+  "ordinal": 37,
+  "category": "People / Leadership",
+  "title": "Process Resistance",
+  "scenario": "You are a Team Lead. A new company process for tracking tasks was introduced last week. An employee messages you: “I don't think this new process will work.” They feel it adds extra work without clear benefit.",
+  "task": "Understand the concern and explain how feedback will be handled.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for specific feedback",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the purpose of the new process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how feedback will be reviewed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Encourages trying it for a set period",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C38",
+  "part": "TEAMS",
+  "ordinal": 38,
+  "category": "People / Leadership",
+  "title": "Sensitive Change",
+  "scenario": "You are a Team Lead. Your manager messages you asking you to inform your team immediately about a sensitive change, such as a change in shift timings or project reassignment. The details provided are brief, and you are not fully sure about some points.",
+  "task": "Ensure accuracy and appropriate wording.",
+  "metrics": [
+   {
+    "name": "Clarifies details before sharing",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms accuracy with the manager",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Plans appropriate wording and channel",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Considers the team's reaction",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not share incomplete information",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C39",
+  "part": "TEAMS",
+  "ordinal": 39,
+  "category": "People / Leadership",
+  "title": "Considering Leaving",
+  "scenario": "You are a Team Manager. A team member messages you privately saying they are thinking about leaving the company because their workload has been too high for months and they are feeling burnt out. They are a valuable member of the team.",
+  "task": "Listen, understand root cause, and route appropriately.",
+  "metrics": [
+   {
+    "name": "Listens empathetically",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Understands the root cause (workload, burnout)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges their value",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Discusses possible support",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Routes to manager or HR appropriately",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C40",
+  "part": "TEAMS",
+  "ordinal": 40,
+  "category": "AI / Tools / Processes",
+  "title": "AI Tool Choice",
+  "scenario": "You are a Senior Engineer. A team member messages you asking which AI tool they should use to automate a repetitive task, such as summarizing migration logs. Some tools are approved by the company, while others are not, and the logs may contain customer data.",
+  "task": "Recommend based on task, approved tools, data sensitivity, and governance.",
+  "metrics": [
+   {
+    "name": "Asks what the task involves",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Checks data sensitivity",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Recommends only approved tools",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains governance requirements",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers help or a pointer to guidance",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C41",
+  "part": "TEAMS",
+  "ordinal": 41,
+  "category": "AI / Tools / Processes",
+  "title": "External AI Data",
+  "scenario": "You are a Team Lead. An employee messages you asking whether it is okay to paste customer information, such as email addresses and file names from migration logs, into a public AI tool to get help analyzing it.",
+  "task": "Protect data and explain approved-use expectations.",
+  "metrics": [
+   {
+    "name": "Clearly says no for customer data in unapproved tools",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the risk and company policy",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests approved alternatives",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how to anonymise if allowed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Polite and helpful",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C42",
+  "part": "TEAMS",
+  "ordinal": 42,
+  "category": "AI / Tools / Processes",
+  "title": "Internal Tool Mandatory",
+  "scenario": "You are a Team Manager. An employee messages you asking why they must use a particular internal tool, such as the ticketing system or SprintBoard, when they feel email or spreadsheets are easier and faster.",
+  "task": "Explain business/process rationale.",
+  "metrics": [
+   {
+    "name": "Explains the business reasons (tracking, visibility, reporting)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges their concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains benefits to them",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers training or tips",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Invites feedback on improvements",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C43",
+  "part": "TEAMS",
+  "ordinal": 43,
+  "category": "AI / Tools / Processes",
+  "title": "Support via Personal Chat",
+  "scenario": "You are a member of the IT Support team. An employee keeps sending support requests to you through personal chat instead of raising a ticket in the ticketing system. This makes it hard to track requests, and others' requests are getting delayed.",
+  "task": "Redirect to the correct process while remaining helpful.",
+  "metrics": [
+   {
+    "name": "Helps with the current request if urgent",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Politely redirects to the ticketing system",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains why it matters (tracking, fairness)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares the link or steps to raise a ticket",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Friendly tone",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C44",
+  "part": "TEAMS",
+  "ordinal": 44,
+  "category": "AI / Tools / Processes",
+  "title": "New AI Automation",
+  "scenario": "You are a Team Lead. Your team messages you asking whether they can build and use a new AI automation (for example, auto-replying to customer emails) without getting formal approval, because they think it will save time.",
+  "task": "Explain governance and approval expectations.",
+  "metrics": [
+   {
+    "name": "Explains the approval and governance process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Mentions data and security risks",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Encourages the idea positively",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives the steps to get approval",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers help with the request",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C45",
+  "part": "TEAMS",
+  "ordinal": 45,
+  "category": "AI / Tools / Processes",
+  "title": "Duplicate Automation",
+  "scenario": "You are a Team Lead. You learn that an employee has built a new AI automation for generating reports, but a similar internal tool already exists and is used by other teams. The employee is proud of their work and has started sharing it with others.",
+  "task": "Discuss consolidation and avoid unnecessary duplication.",
+  "metrics": [
+   {
+    "name": "Acknowledges the effort",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Mentions the existing tool",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Discusses differences and possible consolidation",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Avoids duplication",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes next steps with the tool owner",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C46",
+  "part": "TEAMS",
+  "ordinal": 46,
+  "category": "AI / Tools / Processes",
+  "title": "Low Automation ROI",
+  "scenario": "You are the Automation Lead. Your manager messages you asking why an AI automation launched three months ago has not delivered the expected time savings (ROI). Usage data shows that only a few people are using it regularly.",
+  "task": "Discuss usage, impact, measurement, and corrective action.",
+  "metrics": [
+   {
+    "name": "Shares usage and impact data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies causes (low adoption, usability issues)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes corrective actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests how ROI will be measured",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a timeline",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C47",
+  "part": "TEAMS",
+  "ordinal": 47,
+  "category": "AI / Tools / Processes",
+  "title": "Internal Tool Slowing Work",
+  "scenario": "You are an Operations Lead. An employee messages you saying a newly launched internal tool is slowing down their work: pages load slowly, and it takes more steps than the old process. Other employees may be facing the same problem.",
+  "task": "Acknowledge, gather evidence, and route for resolution.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for specific examples and evidence",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Logs the issue through the right channel",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives a timeline for follow-up",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers a workaround if possible",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C48",
+  "part": "TEAMS",
+  "ordinal": 48,
+  "category": "AI / Tools / Processes",
+  "title": "Manual vs AI Agent",
+  "scenario": "You are a Team Lead. Your team messages you asking whether they should handle a recurring operational problem manually or build an AI agent to automate it. The problem happens a few times a week and takes about an hour each time to fix manually.",
+  "task": "Assess frequency, impact, complexity, risk, and ROI before deciding.",
+  "metrics": [
+   {
+    "name": "Assesses frequency and time spent",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Considers complexity, risk and cost",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Estimates ROI",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Recommends an approach with reasoning",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests a pilot or next step",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C49",
+  "part": "TEAMS",
+  "ordinal": 49,
+  "category": "Incident Management",
+  "title": "Customer Wants Immediate Confirmation",
+  "scenario": "You are the Support Lead during an active incident. Earlier today, a platform issue caused some migration jobs to fail midway. Engineering is still running validation checks to confirm whether any files were skipped or corrupted. The customer's IT Manager, who must report to their own leadership within the hour, messages you: “Can you confirm right now that no customer data has been lost?” You cannot confirm this yet.",
+  "task": "Acknowledge the concern, explain what is confirmed, avoid giving an unsupported assurance, and state the next verification/update.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern seriously",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Does not give an assurance that is not yet confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares what is confirmed so far",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the validation still in progress",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Commits to a specific time for the next update",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "C50",
+  "part": "TEAMS",
+  "ordinal": 50,
+  "category": "Customer / Project",
+  "title": "Customer Disputes the Project Status",
+  "scenario": "You are the Project Manager. Your weekly status report, sent yesterday, showed the project as 'On Track'. The customer's project lead now messages you: “Your status report says the project is on track, but our team is seeing delays and unfinished items.” Within your own team, the Migration and Engineering leads have different views on which items are actually complete and which are still pending.",
+  "task": "Clarify the discrepancy, avoid becoming defensive, identify what needs to be verified, and agree on the next concrete update.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern without becoming defensive",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Accepts that the report and the customer's experience do not match",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies the items that need to be verified",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a joint review of open items",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a time for a corrected status update",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M01",
+  "part": "MEETING",
+  "ordinal": 1,
+  "category": "Customer Meetings",
+  "title": "Migration Delay Meeting",
+  "scenario": "You are the Migration Project Manager. The customer's migration is now two weeks behind the original schedule due to late inputs from their side, a few failed batches, and API throttling. The customer's project sponsor and IT team have joined a video call and are clearly unhappy. They are questioning whether CloudFuze can deliver on time and want answers.",
+  "task": "Lead the discussion and recover confidence.",
+  "metrics": [
+   {
+    "name": "Opens by acknowledging the customer's frustration",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents facts on delay causes without blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares a realistic recovery plan and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on actions, owners and dates",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Closes with a follow-up and communication plan",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M02",
+  "part": "MEETING",
+  "ordinal": 2,
+  "category": "Customer Meetings",
+  "title": "Critical Production Issue",
+  "scenario": "You are the Delivery Lead. The customer's production migration failed last night, affecting about 1,200 users who could not access their files this morning. Engineering has identified the likely cause and is working on recovery. The customer's IT Director and project team have called an urgent meeting to understand what happened and what comes next.",
+  "task": "Explain the situation and recovery plan.",
+  "metrics": [
+   {
+    "name": "Shows urgency and ownership",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains what happened in simple terms",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares recovery plan and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Separates confirmed facts from ongoing investigation",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on update cadence",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M03",
+  "part": "MEETING",
+  "ordinal": 3,
+  "category": "Customer Meetings",
+  "title": "Missing Data Complaint",
+  "scenario": "You are the Migration Engineer. A week after a migration was completed, the customer says that some users' data is missing. In the meeting, the customer is frustrated and suggests that CloudFuze did not do the work properly. Initial checks show some files may have been excluded by agreed filters, but this is not yet confirmed.",
+  "task": "Handle the discussion without becoming defensive.",
+  "metrics": [
+   {
+    "name": "Listens without becoming defensive",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Asks for examples and details",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares possible reasons honestly, without blaming",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a joint validation process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a timeline for findings",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M04",
+  "part": "MEETING",
+  "ordinal": 4,
+  "category": "Customer Meetings",
+  "title": "Customer Escalation",
+  "scenario": "You are the Account Delivery Manager. The customer has escalated the project to CloudFuze senior management after several missed deadlines and unresolved issues. A recovery meeting has been scheduled with the customer's leadership, your senior manager, and the project team. You are expected to lead the meeting and present a way forward.",
+  "task": "Lead the recovery meeting.",
+  "metrics": [
+   {
+    "name": "Acknowledges the escalation and its causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Takes ownership",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents a structured recovery plan",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns owners and dates",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes governance (regular reviews)",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M05",
+  "part": "MEETING",
+  "ordinal": 5,
+  "category": "Customer Meetings",
+  "title": "SLA Breach Meeting",
+  "scenario": "You are the Support Manager. A P1 ticket (migration completely blocked) took 9 hours to resolve against a committed SLA of 4 hours. The customer has asked for a meeting to understand why the SLA was breached and what CloudFuze will do to prevent it from happening again.",
+  "task": "Explain what happened and preventive actions.",
+  "metrics": [
+   {
+    "name": "Acknowledges the breach openly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the timeline of what happened",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States the reasons factually",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents preventive actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on follow-up",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M06",
+  "part": "MEETING",
+  "ordinal": 6,
+  "category": "Customer Meetings",
+  "title": "Cutover Readiness Meeting",
+  "scenario": "You are the Project Manager. The customer's cutover (go-live) is scheduled for this weekend. You are leading a meeting with the customer's IT team and the CloudFuze team to confirm whether everything is ready, including the delta migration status, user communication, open issues, and rollback plans.",
+  "task": "Determine readiness, risks, dependencies, and actions.",
+  "metrics": [
+   {
+    "name": "Reviews readiness item by item",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies open risks and dependencies",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms owners for each action",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on go/no-go criteria",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms the rollback plan",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M07",
+  "part": "MEETING",
+  "ordinal": 7,
+  "category": "Customer Meetings",
+  "title": "Unrealistic ETA",
+  "scenario": "You are the Migration Project Manager. In a meeting, the customer demands that the full migration (around 25 TB) be completed within 24 hours due to an internal business deadline. Your assessment shows it will take at least 3 to 4 days because of data volume and destination platform limits. The customer is insisting.",
+  "task": "Negotiate a realistic timeline.",
+  "metrics": [
+   {
+    "name": "Acknowledges the business pressure",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the realistic timeline with reasons",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers options (phased approach, priority users)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Negotiates an agreed plan",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms commitments in writing",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M08",
+  "part": "MEETING",
+  "ordinal": 8,
+  "category": "Customer Meetings",
+  "title": "Scope Change",
+  "scenario": "You are the Project Manager. The migration is nearly complete and cutover is next week. In a meeting, the customer suddenly asks to add new user groups, change folder structures, and include additional data sources. These changes will affect the timeline, effort, and cost.",
+  "task": "Discuss scope, impact, timeline, and options.",
+  "metrics": [
+   {
+    "name": "Listens to the request",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains impact on timeline, effort and cost",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers options (phase 2, change request)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a decision process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M09",
+  "part": "MEETING",
+  "ordinal": 9,
+  "category": "Customer Meetings",
+  "title": "Communication Complaint",
+  "scenario": "You are the Project Manager. In a regular project meeting, the customer's sponsor says they are not getting proper updates. They often hear about problems from their own users first and do not know whom to contact on the CloudFuze side.",
+  "task": "Agree on communication cadence and ownership.",
+  "metrics": [
+   {
+    "name": "Acknowledges the concern",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a communication cadence",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Names a single point of contact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines escalation path",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms the format of updates",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M10",
+  "part": "MEETING",
+  "ordinal": 10,
+  "category": "Customer Meetings",
+  "title": "Executive Attention",
+  "scenario": "You are the Account Manager. After repeated issues over the past month, the customer says they want CloudFuze senior leadership to be directly involved in the project. You are in a meeting with the customer to manage this request and agree on next steps.",
+  "task": "Manage escalation and next steps.",
+  "metrics": [
+   {
+    "name": "Acknowledges the request",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how leadership will be involved",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents a recovery plan",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a governance structure",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on the next review date",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M11",
+  "part": "MEETING",
+  "ordinal": 11,
+  "category": "Cross-Functional Meetings",
+  "title": "Sales vs Product Conflict",
+  "scenario": "You are the Delivery Manager. A Sales representative promised a customer a feature that CloudFuze does not support. You are leading an internal meeting with Sales and Product to agree on the facts and decide how to respond to the customer.",
+  "task": "Align teams on facts and customer commitment.",
+  "metrics": [
+   {
+    "name": "Establishes the facts neutrally",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Avoids blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Focuses on customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a response to the customer",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a process to prevent recurrence",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M12",
+  "part": "MEETING",
+  "ordinal": 12,
+  "category": "Cross-Functional Meetings",
+  "title": "Product vs Engineering Priority",
+  "scenario": "You are a Program Manager. Product and Engineering teams disagree about which feature should be built first: one customer-requested feature or a platform performance improvement. You are leading a meeting to help them decide.",
+  "task": "Facilitate prioritization.",
+  "metrics": [
+   {
+    "name": "Defines clear prioritisation criteria",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gathers input from both sides",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Uses data on customer and business impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Drives a clear decision",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Communicates the outcome and owners",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M13",
+  "part": "MEETING",
+  "ordinal": 13,
+  "category": "Cross-Functional Meetings",
+  "title": "Engineering vs QA Conflict",
+  "scenario": "You are the Release Manager. Engineering says QA is slowing down releases with long testing cycles. QA says Engineering gives them unstable builds that keep failing. Tension between the teams is high, and releases are being delayed. You are leading a meeting to resolve this.",
+  "task": "Resolve conflict using facts and shared goals.",
+  "metrics": [
+   {
+    "name": "Brings both sides to facts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Avoids blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies root causes for delays and instability",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on shared goals and actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets up a follow-up review",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M14",
+  "part": "MEETING",
+  "ordinal": 14,
+  "category": "Cross-Functional Meetings",
+  "title": "Migration vs Engineering Conflict",
+  "scenario": "You are the Delivery Lead. A technical issue is affecting a customer migration. The Migration team says it is an Engineering (product) issue, and Engineering says it is a Migration (configuration) issue. The customer is waiting, and no one is working on it. You are leading a meeting with both teams.",
+  "task": "Establish ownership and immediate actions.",
+  "metrics": [
+   {
+    "name": "Focuses on customer impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns an interim owner immediately",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on immediate actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Plans a joint investigation",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies ownership for the future",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M15",
+  "part": "MEETING",
+  "ordinal": 15,
+  "category": "Cross-Functional Meetings",
+  "title": "Resource Allocation",
+  "scenario": "You are the Resource Manager. Two important projects both need the same senior engineer next week: one is a large enterprise migration, and the other is a strategic customer's production issue. Both project managers believe their project should get priority.",
+  "task": "Facilitate prioritization based on business impact.",
+  "metrics": [
+   {
+    "name": "Compares business impact of both projects",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Considers options (time-sharing, alternatives)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Drives a decision",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Communicates to both project managers",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Plans for risk mitigation",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M16",
+  "part": "MEETING",
+  "ordinal": 16,
+  "category": "Cross-Functional Meetings",
+  "title": "Priority Negotiation",
+  "scenario": "You are the Engineering Manager. Three customer issues (P1 and P2) are competing for the same limited engineering resources. Each Account Manager is pushing for their customer's issue to be handled first. You are leading a meeting to make a clear decision.",
+  "task": "Drive a clear priority decision.",
+  "metrics": [
+   {
+    "name": "Compares impact, urgency and customer value",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Drives a clear priority order",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns resources",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on customer communication",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a review point",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M17",
+  "part": "MEETING",
+  "ordinal": 17,
+  "category": "Cross-Functional Meetings",
+  "title": "Project Recovery",
+  "scenario": "You are the Delivery Manager. A customer project is now four weeks behind schedule because of resource gaps, technical issues, and late customer inputs. You are leading a meeting with internal stakeholders (Engineering, Delivery, and Account Management) to create a recovery plan.",
+  "task": "Develop a recovery plan with stakeholders.",
+  "metrics": [
+   {
+    "name": "Reviews current status and causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies recovery actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns owners and dates",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a revised timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on tracking and communication",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M18",
+  "part": "MEETING",
+  "ordinal": 18,
+  "category": "Cross-Functional Meetings",
+  "title": "Release Readiness",
+  "scenario": "You are the Release Manager. A major product release is scheduled in three days. You are leading a meeting with Engineering, QA, Support, and Product to check whether the release is ready to go, including open bugs, test results, risks, and dependencies.",
+  "task": "Assess readiness, risks, dependencies, and go/no-go criteria.",
+  "metrics": [
+   {
+    "name": "Reviews open bugs and test results",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies risks and dependencies",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Applies go/no-go criteria",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Drives a clear decision",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms communication and rollback plans",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M19",
+  "part": "MEETING",
+  "ordinal": 19,
+  "category": "Cross-Functional Meetings",
+  "title": "Risk Review",
+  "scenario": "You are the Project Manager. A major customer migration (8,000 users) is starting next week. During planning, the team identified several risks: API throttling, incomplete user mapping, limited customer IT availability, and a tight cutover window. You are leading a risk review meeting.",
+  "task": "Create owners, mitigations, and contingency plans.",
+  "metrics": [
+   {
+    "name": "Reviews each risk",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns an owner per risk",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on mitigation and contingency plans",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Prioritises risks by impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets follow-up dates",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M20",
+  "part": "MEETING",
+  "ordinal": 20,
+  "category": "Cross-Functional Meetings",
+  "title": "Stakeholder Alignment",
+  "scenario": "You are the Program Manager. Stakeholders from Sales, Delivery, Engineering, and the customer each have different expectations about the project's timeline and deliverables. This is causing confusion and conflict. You are leading a meeting to align everyone.",
+  "task": "Create a shared understanding.",
+  "metrics": [
+   {
+    "name": "Gathers each stakeholder's expectations",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies gaps and conflicts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a shared understanding",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Documents agreed scope and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M21",
+  "part": "MEETING",
+  "ordinal": 21,
+  "category": "People Management",
+  "title": "Employee Conflict",
+  "scenario": "You are a Team Manager. Two team members have been openly disagreeing in meetings and on chat about how a project should be done. Their conflict is affecting teamwork and delaying delivery. You have called a meeting with both of them.",
+  "task": "Facilitate a constructive resolution.",
+  "metrics": [
+   {
+    "name": "Stays neutral",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Lets each person share their view",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Focuses on shared goals",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on working rules",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a follow-up",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M22",
+  "part": "MEETING",
+  "ordinal": 22,
+  "category": "People Management",
+  "title": "Performance Discussion",
+  "scenario": "You are a Team Manager. A team member has missed several deadlines over the last month, causing delays for customers. You are meeting them one-on-one to discuss their performance in a constructive way.",
+  "task": "Conduct a constructive performance discussion.",
+  "metrics": [
+   {
+    "name": "Shares specific examples",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Listens to the employee's perspective",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on improvement steps",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a follow-up date",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M23",
+  "part": "MEETING",
+  "ordinal": 23,
+  "category": "People Management",
+  "title": "Performance Recovery",
+  "scenario": "You are a Team Manager. An employee's performance has been declining for the past few months, including quality issues and missed deadlines. Previous informal conversations have not helped. You are meeting them to agree on a formal improvement plan.",
+  "task": "Create an improvement plan.",
+  "metrics": [
+   {
+    "name": "Reviews performance facts",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on clear goals",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines support and resources",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets measurable milestones",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a review timeline",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M24",
+  "part": "MEETING",
+  "ordinal": 24,
+  "category": "People Management",
+  "title": "Employee Overloaded",
+  "scenario": "You are a Team Lead. An employee has told you they cannot handle any more work because they are already managing several projects and feeling stressed. A new project still needs to be assigned. You are meeting with them to discuss their workload.",
+  "task": "Discuss workload and priorities.",
+  "metrics": [
+   {
+    "name": "Listens and acknowledges",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Reviews current workload",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Reprioritises together",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on realistic commitments",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Follows up",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M25",
+  "part": "MEETING",
+  "ordinal": 25,
+  "category": "People Management",
+  "title": "Process Resistance",
+  "scenario": "You are a Team Manager. A new company process was introduced, but one employee is refusing to follow it, saying it is a waste of time. Other team members have noticed. You are meeting with the employee to understand their concerns.",
+  "task": "Understand concerns and reinforce expectations.",
+  "metrics": [
+   {
+    "name": "Understands the concerns",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the purpose of the process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies expectations",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on next steps",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers support",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M26",
+  "part": "MEETING",
+  "ordinal": 26,
+  "category": "People Management",
+  "title": "Manager Decision Challenge",
+  "scenario": "You are a Team Manager. An employee strongly disagrees with a recent management decision, such as a change in project assignment or work policy. They have requested a meeting to discuss it.",
+  "task": "Listen and explain decision/escalation route.",
+  "metrics": [
+   {
+    "name": "Listens respectfully",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the reasoning behind the decision",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges the disagreement",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the escalation route if needed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M27",
+  "part": "MEETING",
+  "ordinal": 27,
+  "category": "People Management",
+  "title": "Team Morale",
+  "scenario": "You are a Team Manager. Your team has been working under heavy pressure for months, with long hours, tight deadlines, and frequent escalations. Morale is low, and some team members seem disengaged. You are holding a team meeting to discuss this openly.",
+  "task": "Discuss issues and actions to improve morale.",
+  "metrics": [
+   {
+    "name": "Encourages open discussion",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges the pressure",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies key issues",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on practical actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Follows up regularly",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M28",
+  "part": "MEETING",
+  "ordinal": 28,
+  "category": "People Management",
+  "title": "High Performer Retention",
+  "scenario": "You are a Team Manager. A high-performing employee has told you they are thinking about leaving the company. They are a key contributor, and losing them would affect the team. You are meeting with them to understand why.",
+  "task": "Understand concerns and identify retention actions.",
+  "metrics": [
+   {
+    "name": "Listens to understand the reasons",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges contributions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Discusses possible options (growth, workload, role)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Follows up quickly",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M29",
+  "part": "MEETING",
+  "ordinal": 29,
+  "category": "People Management",
+  "title": "Role Transition",
+  "scenario": "You are a Team Manager. Due to organizational restructuring, an employee's responsibilities are changing. They will move to a different type of work and may report to a new lead. You are meeting with them to explain the change.",
+  "task": "Explain transition clearly and empathetically.",
+  "metrics": [
+   {
+    "name": "Explains the change clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the reasons",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges the impact on the employee",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains support available",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Invites questions",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M30",
+  "part": "MEETING",
+  "ordinal": 30,
+  "category": "People Management",
+  "title": "Restructure Announcement",
+  "scenario": "You are a Department Head. The team is being restructured: some roles are changing, and some teams are being merged. You are holding a team meeting to announce the change and answer employees' questions. Many people are anxious.",
+  "task": "Explain change and answer employee questions.",
+  "metrics": [
+   {
+    "name": "Explains what is changing and why",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies what is confirmed",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Answers questions honestly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains next steps and timeline",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers one-to-one follow-ups",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M31",
+  "part": "MEETING",
+  "ordinal": 31,
+  "category": "AI / Transformation",
+  "title": "AI Adoption",
+  "scenario": "You are a Team Manager. Leadership wants your team to start using AI tools for repetitive operational tasks, such as report preparation and log analysis. Some team members are excited, but others are skeptical or worried. You are leading a meeting to build understanding and support.",
+  "task": "Build understanding and buy-in.",
+  "metrics": [
+   {
+    "name": "Explains why AI adoption matters",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Gives practical examples",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Addresses concerns",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes a starting plan",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Offers training and support",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M32",
+  "part": "MEETING",
+  "ordinal": 32,
+  "category": "AI / Transformation",
+  "title": "AI Governance",
+  "scenario": "You are a Team Lead. An employee wants to build an AI solution using customer data, such as migration logs and user details, to improve analysis. The idea has potential, but it raises data privacy and governance concerns.",
+  "task": "Discuss data, governance, risk, and approved approach.",
+  "metrics": [
+   {
+    "name": "Appreciates the idea",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Discusses data sensitivity",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains governance rules",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Suggests an approved approach",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M33",
+  "part": "MEETING",
+  "ordinal": 33,
+  "category": "AI / Transformation",
+  "title": "Automation ROI Review",
+  "scenario": "You are the Automation Lead. An AI automation was launched six months ago but is not delivering the expected time savings. Usage is low, and some users say it is hard to use. You are leading a review meeting with the team and stakeholders.",
+  "task": "Review usage, outcomes, and corrective actions.",
+  "metrics": [
+   {
+    "name": "Reviews usage and outcome data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies causes of low impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on corrective actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines measurement",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets a review date",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M34",
+  "part": "MEETING",
+  "ordinal": 34,
+  "category": "AI / Transformation",
+  "title": "Build vs Buy",
+  "scenario": "You are a Technology Manager. The team needs a better tool for tracking migration projects. One option is to build an internal tool (more customizable, but slower and needs ongoing maintenance), and the other is to buy an existing solution (faster, but with licence costs and less flexibility). Team members have strong opinions on both sides, and you are leading a discussion to decide.",
+  "task": "Lead a structured decision discussion.",
+  "metrics": [
+   {
+    "name": "Defines decision criteria (cost, time, flexibility, maintenance)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Compares both options",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Encourages balanced input",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Drives a decision",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Confirms next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M35",
+  "part": "MEETING",
+  "ordinal": 35,
+  "category": "AI / Transformation",
+  "title": "AI Agent Proposal",
+  "scenario": "You are a Team Lead. Your team spends around 20 hours every week manually checking migration logs, identifying failed files, and preparing re-run lists. You believe an AI agent could do most of this automatically, faster and with fewer errors. You are presenting your proposal to leadership to get approval and budget, and they will ask about cost, risk, and expected return.",
+  "task": "Explain problem, solution, ROI, risks, and implementation.",
+  "metrics": [
+   {
+    "name": "Explains the problem clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents the solution",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shows ROI",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Covers risks and controls",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes an implementation plan",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M36",
+  "part": "MEETING",
+  "ordinal": 36,
+  "category": "AI / Transformation",
+  "title": "AI Tool Consolidation",
+  "scenario": "You are a Technology Manager. Several teams have built similar AI tools on their own, such as report generators and log summarizers. This is causing duplication of effort, cost, and inconsistent quality. You are leading a meeting to propose a better approach.",
+  "task": "Propose consolidation and governance.",
+  "metrics": [
+   {
+    "name": "Shows duplication and its impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes consolidation",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines a governance process",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on owners",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M37",
+  "part": "MEETING",
+  "ordinal": 37,
+  "category": "AI / Transformation",
+  "title": "AI Risk Discussion",
+  "scenario": "You are an AI Program Lead. Leadership is concerned about using AI because of data privacy risks and the possibility of AI producing wrong or unreliable results. You are presenting in a meeting to address their concerns.",
+  "task": "Address concerns and propose controls.",
+  "metrics": [
+   {
+    "name": "Acknowledges concerns",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains data privacy controls",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains quality and review checks",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Proposes governance",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M38",
+  "part": "MEETING",
+  "ordinal": 38,
+  "category": "AI / Transformation",
+  "title": "AI Training Review",
+  "scenario": "You are the Learning and Development Manager. An AI training program was launched, but completion rates are low (around 40%) and assessment scores are below expectations. You are leading a review meeting with managers.",
+  "task": "Discuss gaps and improvement actions.",
+  "metrics": [
+   {
+    "name": "Reviews completion and performance data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies gaps and causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on improvement actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns owners",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Sets targets and review dates",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M39",
+  "part": "MEETING",
+  "ordinal": 39,
+  "category": "AI / Transformation",
+  "title": "Process Automation Workshop",
+  "scenario": "You are an Operations Lead. Your team has many manual workflows, such as data entry, report preparation, and ticket routing. You are leading a workshop to identify which tasks should be automated first.",
+  "task": "Identify and prioritize automation opportunities.",
+  "metrics": [
+   {
+    "name": "Lists manual workflows",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assesses effort and impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Prioritises opportunities",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns owners",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on a pilot",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M40",
+  "part": "MEETING",
+  "ordinal": 40,
+  "category": "AI / Transformation",
+  "title": "AI Change Management",
+  "scenario": "You are a Department Manager. Employees are worried that adopting AI will change or reduce their roles. Some fear job loss. You are leading a meeting to address their concerns and explain how work will change.",
+  "task": "Address concerns and explain future ways of working.",
+  "metrics": [
+   {
+    "name": "Acknowledges concerns",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains how roles will change",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Highlights opportunities and support",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Is honest about what is not yet known",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Invites questions and feedback",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M41",
+  "part": "MEETING",
+  "ordinal": 41,
+  "category": "Leadership / Business",
+  "title": "Monthly Business Review",
+  "scenario": "You are a Delivery Manager presenting at the Monthly Business Review (MBR) to leadership. You have 15 minutes to cover project performance (on-time delivery, completed migrations), key risks, open customer issues and escalations, and resource requirements for next month. Leadership expects facts, numbers, and clear asks.",
+  "task": "Lead a concise MBR-style discussion.",
+  "metrics": [
+   {
+    "name": "Presents key metrics clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Highlights risks and customer issues",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States resource needs",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Keeps it concise",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on decisions and actions",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M42",
+  "part": "MEETING",
+  "ordinal": 42,
+  "category": "Leadership / Business",
+  "title": "Poor Delivery Performance",
+  "scenario": "You are the Delivery Head. Over the last quarter, on-time delivery dropped from 90% to 72%, and customer complaints increased. Leadership has called a meeting asking you to explain why performance declined and what you will do to fix it. They expect facts rather than excuses.",
+  "task": "Present facts, root causes, and recovery actions.",
+  "metrics": [
+   {
+    "name": "Presents data clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains root causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Takes ownership",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents recovery actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines how improvement will be tracked",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M43",
+  "part": "MEETING",
+  "ordinal": 43,
+  "category": "Leadership / Business",
+  "title": "Customer Satisfaction Review",
+  "scenario": "You are the Customer Success Manager. Customer satisfaction scores have dropped significantly over the last quarter. You are presenting to leadership on what is causing the decline and how you plan to fix it.",
+  "task": "Present causes, actions, and success measures.",
+  "metrics": [
+   {
+    "name": "Presents satisfaction data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Defines success measures",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on review dates",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M44",
+  "part": "MEETING",
+  "ordinal": 44,
+  "category": "Leadership / Business",
+  "title": "Resource Planning",
+  "scenario": "You are a Delivery Manager. Your team of 10 engineers is fully booked, and two new projects are expected to be signed next month. Without at least three more engineers, both projects will be delayed and existing customers may be affected. You are meeting leadership to explain why more resources are needed and to get approval.",
+  "task": "Build a business case.",
+  "metrics": [
+   {
+    "name": "Shows the current capacity",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains impact without more resources",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents a business case",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "States specific needs",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Requests a decision",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M45",
+  "part": "MEETING",
+  "ordinal": 45,
+  "category": "Leadership / Business",
+  "title": "Quarterly Performance Review",
+  "scenario": "You are a Team Manager. It is the end of the quarter, and you are presenting your team's performance to leadership. The team completed 18 migrations and improved response times, but missed two project deadlines and had one major escalation. You need to cover achievements, gaps, and priorities for the next quarter using data.",
+  "task": "Lead the review with evidence and actions.",
+  "metrics": [
+   {
+    "name": "Presents achievements with data",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Acknowledges gaps honestly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains lessons learned",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents next-quarter priorities",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on actions",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M46",
+  "part": "MEETING",
+  "ordinal": 46,
+  "category": "Leadership / Business",
+  "title": "Organizational Restructure",
+  "scenario": "You are a Senior Manager. Neutara is restructuring its teams: some departments are being merged and reporting lines are changing. You are leading a meeting to explain why the organization is changing and how teams will work differently. Employees are anxious and have many questions about their roles.",
+  "task": "Communicate change clearly and handle concerns.",
+  "metrics": [
+   {
+    "name": "Explains the reasons for change",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the new structure",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies how work will change",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Addresses concerns",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M47",
+  "part": "MEETING",
+  "ordinal": 47,
+  "category": "Leadership / Business",
+  "title": "New Operating Model",
+  "scenario": "You are a Senior Manager. Neutara is moving toward an AI-enabled operating model, where AI tools will support daily work such as reporting, ticket triage, and documentation. You are leading a meeting to explain the new ways of working, what is expected from employees, and what outcomes the company expects.",
+  "task": "Explain the new ways of working and expected outcomes.",
+  "metrics": [
+   {
+    "name": "Explains what is changing",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains expectations",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains benefits",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Addresses concerns",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Shares support and next steps",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M48",
+  "part": "MEETING",
+  "ordinal": 48,
+  "category": "Leadership / Business",
+  "title": "Process Failure Review",
+  "scenario": "You are an Operations Lead. The same operational failure has happened again, for example, a migration batch started without proper checks, causing customer impact. You are leading a retrospective meeting with the team to understand what went wrong.",
+  "task": "Conduct a retrospective focused on learning rather than blame.",
+  "metrics": [
+   {
+    "name": "Focuses on learning, not blame",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Reviews what happened",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Identifies root causes",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on preventive actions",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns owners",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M49",
+  "part": "MEETING",
+  "ordinal": 49,
+  "category": "Leadership / Business",
+  "title": "Executive Escalation",
+  "scenario": "You are the Delivery Head. A major customer's migration has been failing repeatedly for a week, and their CIO has emailed Neutara's leadership directly, threatening to end the contract. Leadership has called a meeting and wants a clear picture of what happened, how badly the customer is affected, who owns the recovery, and what will be done next.",
+  "task": "Present facts, impact, ownership, and recovery plan.",
+  "metrics": [
+   {
+    "name": "Presents facts clearly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Explains the customer and business impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Clarifies ownership",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Presents the recovery plan",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on next steps and updates",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ },
+ {
+  "code": "M50",
+  "part": "MEETING",
+  "ordinal": 50,
+  "category": "Leadership / Business",
+  "title": "Crisis Leadership Simulation",
+  "scenario": "You are the Delivery Head. A major CloudFuze migration for a key enterprise customer has failed, affecting thousands of users. At the same time, the customer has escalated to senior leadership, the P1 SLA has been breached, Engineering is still investigating the root cause, Sales is asking for an ETA to share with the customer, and leadership wants a full update in 15 minutes. You have called an urgent crisis meeting with all stakeholders.",
+  "task": "Conduct a crisis meeting and drive stakeholders toward an action plan.",
+  "metrics": [
+   {
+    "name": "Takes control calmly",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Establishes facts and impact",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Assigns clear roles (technical, customer, internal communication)",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Agrees on what can and cannot be told to Sales and the customer",
+    "weight": 1,
+    "description": null
+   },
+   {
+    "name": "Prepares a short leadership update within 15 minutes",
+    "weight": 1,
+    "description": null
+   }
+  ]
+ }
+]

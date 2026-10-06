@@ -1,0 +1,56 @@
+# Local stack. Ports are chosen not to clash with AI Comm Trainer (5174 / 8090 / 5442).
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: cfa-db
+    environment:
+      POSTGRES_DB: ${DB_NAME:-assessment}
+      POSTGRES_USER: ${DB_USER:-assessment}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-assessment}
+    ports: ["5452:5432"]
+    volumes: [cfa-db:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-assessment} -d ${DB_NAME:-assessment}"]
+      interval: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    container_name: cfa-backend
+    depends_on:
+      db: { condition: service_healthy }
+    ports: ["8095:8080"]
+    environment:
+      # The database the app uses. Defaults to the "db" container above; point DB_HOST/DB_PORT at
+      # another PostgreSQL server to use that instead.
+      SPRING_DATASOURCE_URL: jdbc:postgresql://${DB_HOST:-db}:${DB_PORT:-5432}/${DB_NAME:-assessment}
+      SPRING_DATASOURCE_USERNAME: ${DB_USER:-assessment}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD:-assessment}
+      AZURE_TENANT_ID: ${AZURE_TENANT_ID}
+      AZURE_CLIENT_ID: ${AZURE_CLIENT_ID}
+      APP_JWT_SECRET: ${APP_JWT_SECRET}
+      APP_ADMIN_EMAILS: ${APP_ADMIN_EMAILS}
+      APP_ALLOWED_DOMAINS: ${APP_ALLOWED_DOMAINS:-cloudfuze.com}
+      APP_CORS_ORIGINS: ${APP_CORS_ORIGINS:-http://localhost:5185}
+      APP_PART_MINUTES: ${APP_PART_MINUTES:-20}
+      APP_MARKS_TEAMS: ${APP_MARKS_TEAMS:-20}
+      APP_MARKS_EMAIL: ${APP_MARKS_EMAIL:-35}
+      APP_MARKS_MEETING: ${APP_MARKS_MEETING:-45}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      OPENAI_SCORING_MODEL: ${OPENAI_SCORING_MODEL:-gpt-4o}
+      OPENAI_MEETING_MODEL: ${OPENAI_MEETING_MODEL:-gpt-realtime}
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/api}
+        VITE_AZURE_TENANT_ID: ${AZURE_TENANT_ID}
+        VITE_AZURE_CLIENT_ID: ${AZURE_CLIENT_ID}
+    container_name: cfa-frontend
+    depends_on: [backend]
+    ports: ["5185:80"]
+
+volumes:
+  cfa-db:

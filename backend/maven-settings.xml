@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Maven Central, fetched through Google's mirror.
+
+  WHY. Maven Central rate-limits shared CI IP ranges with a 429, and blocks them outright with a
+  403 once requests keep arriving through the throttling. Bitbucket Pipelines runs from a shared
+  pool, so both have already happened to this repository: first a 429 on spring-boot-starter-mail,
+  then a 403 on the same artifact. A 403 is a block rather than a queue, so retrying cannot clear
+  it, and retrying harder is what turns a 429 into one.
+
+  This matters beyond the pipeline. The SERVER-SIDE deploy builds the backend image, which runs
+  mvn inside it, so the same block can fail a production deploy. That failure is survivable and
+  silent, because the post-swap health check only ever proved the frontend was serving.
+
+  storage-download.googleapis.com is Google's read-only copy of Central, served from GCS without
+  auth and without per-client limits of that kind. Verified byte-identical to repo1.maven.org for
+  the exact artifact that was being blocked.
+
+  mirrorOf is "central" alone, so any other repository a build declares is untouched. Reverting is
+  deleting this file and the two flags that point at it.
+-->
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <mirrors>
+    <mirror>
+      <id>google-maven-central</id>
+      <name>Google GCS mirror of Maven Central</name>
+      <url>https://maven-central.storage-download.googleapis.com/maven2/</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>

@@ -1,0 +1,65 @@
+server:
+  port: 8080
+  # Answers and proctor logs are small, but a long email body plus metadata must never be cut off.
+  tomcat:
+    max-swallow-size: 5MB
+
+spring:
+  application:
+    name: cf-comm-assessment
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5452/assessment}
+    username: ${SPRING_DATASOURCE_USERNAME:assessment}
+    password: ${SPRING_DATASOURCE_PASSWORD:assessment}
+  servlet:
+    multipart:
+      max-file-size: 12MB
+      max-request-size: 12MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc.time_zone: UTC
+
+management:
+  endpoints.web.exposure.include: health
+
+app:
+  # Microsoft sign-in. The same tenant as every CloudFuze tool; the client id must have this
+  # app's origin registered as a Single-page application redirect URI.
+  azure:
+    tenant-id: ${AZURE_TENANT_ID:}
+    client-id: ${AZURE_CLIENT_ID:}
+  # Only accounts on these domains may sign in at all.
+  allowed-domains: ${APP_ALLOWED_DOMAINS:cloudfuze.com}
+  # Comma-separated. These people get the admin portal; everybody else gets the test.
+  admin-emails: ${APP_ADMIN_EMAILS:}
+  jwt:
+    secret: ${APP_JWT_SECRET:}
+    expiration-minutes: ${APP_JWT_EXPIRATION_MINUTES:240}
+  cors:
+    allowed-origins: ${APP_CORS_ORIGINS:http://localhost:5185}
+
+  test:
+    # Each part runs for this long, back to back: Teams message, Email, Meeting.
+    part-minutes: ${APP_PART_MINUTES:20}
+    # Seconds of slack after a part's clock reaches zero, for the final autosave in flight.
+    grace-seconds: ${APP_GRACE_SECONDS:20}
+    # The third serious violation (tab switch, leaving full screen, leaving the window) ends the test.
+    max-violations: ${APP_MAX_VIOLATIONS:3}
+    # Marks per part out of 100. To be confirmed; the split is configuration, not code.
+    marks:
+      teams: ${APP_MARKS_TEAMS:20}
+      email: ${APP_MARKS_EMAIL:35}
+      meeting: ${APP_MARKS_MEETING:45}
+
+  openai:
+    api-key: ${OPENAI_API_KEY:}
+    model: ${OPENAI_MODEL:gpt-4o-mini}
+    # Marking is the heart of the tool, so it gets the stronger model.
+    scoring-model: ${OPENAI_SCORING_MODEL:gpt-4o}
+    # Part 3 live voice meeting (OpenAI Realtime). gpt-realtime-mini is the cheaper option.
+    meeting-model: ${OPENAI_MEETING_MODEL:gpt-realtime}
+    base-url: ${OPENAI_BASE_URL:https://api.openai.com/v1}

@@ -1,0 +1,55 @@
+# PRODUCTION. Only the website is reachable from outside; the API and the database are internal.
+# Serve it behind HTTPS (a reverse proxy or load balancer with a certificate): the microphone and the
+# live meeting in Part 3 only work on a secure (https://) address.
+#
+#   docker compose -f docker-compose.prod.yml --env-file .env.production up -d --build
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_NAME:-assessment}
+      POSTGRES_USER: ${DB_USER:-assessment}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
+    volumes: [cfa-db:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-assessment} -d ${DB_NAME:-assessment}"]
+      interval: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    depends_on:
+      db: { condition: service_healthy }
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://${DB_HOST:-db}:${DB_PORT:-5432}/${DB_NAME:-assessment}
+      SPRING_DATASOURCE_USERNAME: ${DB_USER:-assessment}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
+      AZURE_TENANT_ID: ${AZURE_TENANT_ID:?Set AZURE_TENANT_ID}
+      AZURE_CLIENT_ID: ${AZURE_CLIENT_ID:?Set AZURE_CLIENT_ID}
+      APP_JWT_SECRET: ${APP_JWT_SECRET:?Set APP_JWT_SECRET}
+      APP_ADMIN_EMAILS: ${APP_ADMIN_EMAILS:?Set APP_ADMIN_EMAILS}
+      APP_ALLOWED_DOMAINS: ${APP_ALLOWED_DOMAINS:-cloudfuze.com}
+      APP_CORS_ORIGINS: ${APP_CORS_ORIGINS:?Set APP_CORS_ORIGINS to the site address}
+      APP_MARKS_TEAMS: ${APP_MARKS_TEAMS:-20}
+      APP_MARKS_EMAIL: ${APP_MARKS_EMAIL:-35}
+      APP_MARKS_MEETING: ${APP_MARKS_MEETING:-45}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?Set OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      OPENAI_SCORING_MODEL: ${OPENAI_SCORING_MODEL:-gpt-4o}
+      OPENAI_MEETING_MODEL: ${OPENAI_MEETING_MODEL:-gpt-realtime}
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: /api
+        VITE_AZURE_TENANT_ID: ${AZURE_TENANT_ID}
+        VITE_AZURE_CLIENT_ID: ${AZURE_CLIENT_ID}
+    restart: unless-stopped
+    depends_on: [backend]
+    ports: ["${WEB_PORT:-80}:80"]
+
+volumes:
+  cfa-db:
