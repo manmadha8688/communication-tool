@@ -10,8 +10,8 @@
 | 4 | Copy `.env.example` to `.env` on the server and fill it in. Never commit it. | Server |
 
 ```
-DB_URL=jdbc:postgresql://host.docker.internal:5432/assessment
-DB_USER=assessment
+DB_URL=jdbc:postgresql://localhost:5432/communiq_tool
+DB_USER=communiq_user
 DB_PASSWORD=<password>
 AZURE_TENANT_ID=<Directory (tenant) ID>
 AZURE_CLIENT_ID=<Application (client) ID>
@@ -27,7 +27,7 @@ OPENAI_API_KEY=<key>
 docker compose up -d --build
 ```
 
-The website runs on `127.0.0.1:5185` and the API on `127.0.0.1:8195`, both reachable only from the
+The containers use the server's own network: the website runs on `127.0.0.1:5185` and the API on `127.0.0.1:8195`, both reachable only from the
 server. The API is also reached through the website at `/api`, and the database is the PostgreSQL
 server on the machine (`DB_URL`), not a container. Sign-in is Microsoft only.
 

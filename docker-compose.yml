@@ -1,6 +1,7 @@
-# PRODUCTION. Only the website is reachable from outside; the API is internal.
-# The database is the PostgreSQL server already running on the server (no database container);
-# set DB_URL, DB_USER and DB_PASSWORD in .env.
+# PRODUCTION. Both containers use the server's own network, so "localhost" inside them is the
+# server: the website listens on 127.0.0.1:5185, the API on 127.0.0.1:8195, and the database is the
+# PostgreSQL server on this machine (DB_URL=jdbc:postgresql://localhost:5432/...). Set DB_URL,
+# DB_USER and DB_PASSWORD in .env. The server's nginx (HTTPS) forwards the website address to 5185.
 # Serve it behind HTTPS (a reverse proxy or load balancer with a certificate): the microphone and the
 # live meeting in Part 3 only work on a secure (https://) address.
 #
@@ -9,11 +10,10 @@ services:
   backend:
     build: ./backend
     restart: unless-stopped
-    # Lets the container reach PostgreSQL on the server itself as host.docker.internal.
-    extra_hosts: ["host.docker.internal:host-gateway"]
-    # Only this server can reach it; the public goes through nginx on the website address.
-    ports: ["127.0.0.1:8195:8080"]
+    network_mode: host
     environment:
+      SERVER_ADDRESS: 127.0.0.1
+      SERVER_PORT: 8195
       SPRING_DATASOURCE_URL: ${DB_URL:?Set DB_URL}
       SPRING_DATASOURCE_USERNAME: ${DB_USER:?Set DB_USER}
       SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
@@ -39,6 +39,5 @@ services:
         VITE_AZURE_TENANT_ID: ${AZURE_TENANT_ID}
         VITE_AZURE_CLIENT_ID: ${AZURE_CLIENT_ID}
     restart: unless-stopped
+    network_mode: host
     depends_on: [backend]
-    # The server's nginx (HTTPS) forwards the website address here.
-    ports: ["127.0.0.1:5185:80"]
