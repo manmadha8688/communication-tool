@@ -19,7 +19,6 @@ APP_JWT_SECRET=<random, 32+ characters>
 APP_ADMIN_EMAILS=aditya.rompella@cloudfuze.com,sujana.manapuram@cloudfuze.com
 APP_CORS_ORIGINS=https://<domain>
 OPENAI_API_KEY=<key>
-WEB_PORT=80
 ```
 
 ## Start / update
@@ -28,8 +27,41 @@ WEB_PORT=80
 docker compose up -d --build
 ```
 
-Only the website port is published. The API is reached through the website at `/api`, and the
-database is the PostgreSQL server on the machine (`DB_URL`), not a container. Sign-in is Microsoft only.
+The website runs on `127.0.0.1:5185` and the API on `127.0.0.1:8195`, both reachable only from the
+server. The API is also reached through the website at `/api`, and the database is the PostgreSQL
+server on the machine (`DB_URL`), not a container. Sign-in is Microsoft only.
+
+## nginx on the server (HTTPS)
+
+`/etc/nginx/sites-available/neutaracommuniq`:
+
+```nginx
+server {
+    listen 80;
+    server_name neutaracommuniq.cftools.live;
+
+    client_max_body_size 12m;
+
+    location / {
+        proxy_pass http://127.0.0.1:5185;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_read_timeout 180s;
+    }
+}
+```
+
+```
+sudo ln -s /etc/nginx/sites-available/neutaracommuniq /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+# Gets a free certificate and adds HTTPS (port 443 + redirect from http) to the file above.
+sudo certbot --nginx -d neutaracommuniq.cftools.live
+```
 
 ## Checked in a production-mode run
 
